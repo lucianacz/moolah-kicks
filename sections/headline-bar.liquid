@@ -1,0 +1,58 @@
+
+<div
+  data-section-id="{{ section.id }}"
+  class=""
+  style="background: {{ section.settings.background }}"
+  data-carousel-wraps="true"
+  data-section-type="featured-collection"
+>
+  <div class="section__inner">
+    <div class="headline-bar" data-flickity='{ "cellAlign": "center", "contain": true, "prevNextButtons": false, "pageDots": false, "autoPlay": 2500, "wrapAround": true}'>
+        {%- for block in section.blocks -%}
+        <div class="headline-bar--word">
+          <p style="color: {{ section.settings.text }}">{{ block.settings.text }}</p>
+        </div>
+        {%- endfor -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Headline bar",
+    "tag": "section",
+    "settings": [
+      {
+        "type": "color",
+        "id": "background",
+        "label": "Background",
+        "default": "#F9C94C"
+      },
+      {
+        "type": "color",
+        "id": "text",
+        "label": "Text",
+        "default": "#000"
+      }
+    ],
+    "max_blocks": 8,
+    "blocks": [
+      {
+        "type": "text",
+        "name": "Text",
+        "settings": [
+            {
+                "type": "text",
+                "id": "text",
+                "label": "Text"
+            }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Headline bar"
+      }
+    ]
+  }
+{% endschema %}
