@@ -6,9 +6,10 @@
   data-section-id="{{ section.id }}"
   data-section-type="rich-text"
   class="rich-text section{% if section.settings.section_contrast %} section--contrast{% endif %} {% if background %} rich-text--background{% endif %}"
-  {% if background %}style="background-image: url({{section.settings.background | img_url: 'master'}})"{% endif %}
+  {% unless section.settings.use_background %}{% if background %}style="background-image: url({{section.settings.background | img_url: 'master'}})"{% endif %}{% endunless %}
 >
-  <div class="section__inner rich-text__inner">
+  <div class="section__inner rich-text__inner {% if section.settings.use_background %}rich-text__inner--margin{% endif %}"
+  {% if section.settings.use_background %}style="background: {{ section.settings.background_color }}"{% endif %}>
     {%- for block in section.blocks -%}
       {%- case block.type -%}
         {%- when 'heading' -%}
@@ -64,6 +65,22 @@
         "type": "image_picker",
         "id": "background",
         "label": "Background"
+      },
+      {
+        "type": "checkbox",
+        "id": "use_background",
+        "label": "Use background color & margins",
+        "default": false
+      },
+      {
+        "type": "color",
+        "id": "background_color",
+        "label": "Background",
+        "default": "#F2693A"
+      },
+      {
+        "type": "header",
+        "content": "Text"
       },
       {
         "type": "color",

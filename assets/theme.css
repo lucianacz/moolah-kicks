@@ -4238,7 +4238,7 @@ html:not(.no-js) body.template-index .header--transparent-home:not(.is-sticky).h
 }
   }
 .product{
-  --border-radius:4px;
+  --border-radius:0px;
   --swatch-size:48px;
 
   padding:0 var(--space-outer);
@@ -4247,7 +4247,7 @@ html:not(.no-js) body.template-index .header--transparent-home:not(.is-sticky).h
 }
 @media (min-width: 45em){
 .product{
-    --border-radius:8px
+    --border-radius:0px
 }
   }
 @media (min-width: 60em){
@@ -6033,8 +6033,8 @@ p + .account__cta-wrap{
     padding-top:calc((3 / 2) * 100%);
   }
 .featured-product{
-  --border-radius:4px;
-  --swatch-size:48px
+  --border-radius:0px;
+  --swatch-size:0px
 }
 @media (min-width: 45em){
 .featured-product{

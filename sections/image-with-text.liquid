@@ -14,9 +14,13 @@
   endif
 
   if section.settings.show_margin
-  assign margin = true
+    assign margin = true
   endif
 -%}
+
+{% if section.settings.show_background_section %}  
+  {% assign background_section = true %}    
+{% endif %}
 
 <div
   class="
@@ -27,8 +31,14 @@
     image-with-text--image-{{ section.settings.image_width }}
     image-with-text--align-{{ section.settings.text_alignment }}
     section
+    {% if background_section %}
+      image-with-text--background
+    {% endif %}
     {% if section.settings.remove_margin_bottom %}
       remove-margin-bottom
+    {% endif %}
+    {% if section.settings.remove_margin_top %}
+      remove-margin-top
     {% endif %}
     {% if section.settings.section_contrast -%}
       section--contrast
@@ -36,6 +46,9 @@
   "
   data-section-id="{{ section.id }}"
   data-section-type="image-with-text"
+  {% if background_section %}
+  style="background-color: {{ section.settings.background_section }};"
+  {%- endif %} 
 >
   <div class="image-with-text__inner {% if margin %} section__inner {% endif %}">
     <div class="image-with-text__image-container">
@@ -126,6 +139,9 @@
 
   .section[data-section-id="{{ section.id }}"].remove-margin-bottom {
     margin-bottom: 0;
+  }
+  .section[data-section-id="{{ section.id }}"].remove-margin-top {
+    margin-top: 0;
   }
 }
 
@@ -251,6 +267,17 @@
         "content": "Settings"
       },
       {
+        "type": "checkbox",
+        "id": "show_background_section",
+        "label": "Show background section",
+        "default": false
+      },
+      {
+        "type": "color",
+        "id": "background_section",
+        "label": "Background section"
+      },
+      {
         "id": "section_contrast",
         "type": "checkbox",
         "label": "t:sections.image_with_text.settings.section_contrast.label",
@@ -259,13 +286,19 @@
       {
         "type": "checkbox",
         "id": "show_margin",
-        "label": "Show margin",
+        "label": "Show margin sides",
         "default": true
       },
       {
         "type": "checkbox",
         "id": "remove_margin_bottom",
         "label": "Remove margin bottom",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "remove_margin_top",
+        "label": "Remove margin top",
         "default": false
       }
     ],

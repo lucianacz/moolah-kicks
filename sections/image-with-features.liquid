@@ -52,6 +52,7 @@
         {%- else -%}
           {% render 'image-with-features-item' with
             image: block.settings.image,
+            svg: block.settings.svg,
             image_shape: block.settings.image_shape,
             text_max_width: block.settings.text_max_width,
             heading: block.settings.heading,
@@ -167,6 +168,12 @@
         "type": "feature",
         "name": "t:sections.image_with_features.blocks.feature.name",
         "settings": [
+          {
+            "type": "text",
+            "id": "svg",
+            "label": "Image SVG",
+            "info": "Upload from Settings - Files"
+          },
           {
             "id": "image",
             "type": "image_picker",

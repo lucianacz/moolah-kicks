@@ -16,7 +16,11 @@
   "
   style="--text-max-width: {{ text_max_width }}rem;"
 >
-  {%- if block_has_image -%}
+  {% if svg != blank %}
+  <div class="image-with-features__item--svg">
+    <img src="{{ svg }}" alt="{{ heading }}">
+  </div>
+  {%- elsif block_has_image -%}
     <div class="image-with-features__item-image">
       {% render 'image' with image: image, disable_style: true %}
     </div>
