@@ -1,0 +1,299 @@
+{
+    "sections": {
+      "main": {
+        "type": "main-page",
+        "disabled": true,
+        "settings": {
+          "content_max_width": 700
+        }
+      },
+      "16327066154e592d11": {
+        "type": "slideshow",
+        "blocks": {
+          "16327066154e592d11-0": {
+            "type": "slide",
+            "settings": {
+              "desktop_image": "shopify:\/\/shop_images\/MoolahKicks-5-DillonVibesPhotography-10.jpg",
+              "title": "ABOUT US",
+              "subheading": "",
+              "heading_text_size": 64,
+              "overlay_shadow": 45,
+              "max_width_subheading": 40,
+              "link_text": "Learn more",
+              "link": "",
+              "alignment": "center_center",
+              "color_text": "#ffffff",
+              "color_text_button": "#181818",
+              "color_background_button": "#ffffff",
+              "color_overlay": "#000000",
+              "overlay_opacity": 30
+            }
+          }
+        },
+        "block_order": [
+          "16327066154e592d11-0"
+        ],
+        "settings": {
+          "desktop_height": 100,
+          "mobile_height": 100,
+          "duration_autoplay": 6
+        }
+      },
+      "16327066192148ebcb": {
+        "type": "image-with-text",
+        "blocks": {
+          "16327066192148ebcb-0": {
+            "type": "heading",
+            "settings": {
+              "title": "Image with text",
+              "text_max_width": 32
+            }
+          },
+          "16327066192148ebcb-1": {
+            "type": "subheading",
+            "settings": {
+              "subheading": "<p>Use these sections to promote a particular feature with editorial photography.<\/p>",
+              "text_max_width": 32,
+              "font_size": 20
+            }
+          }
+        },
+        "block_order": [
+          "16327066192148ebcb-0",
+          "16327066192148ebcb-1"
+        ],
+        "settings": {
+          "use_shadow": true,
+          "shadow_color": "#000000",
+          "image_position": "left",
+          "image_width": "half",
+          "aspect_ratio": "natural",
+          "text_alignment": "center",
+          "shadow_text": false,
+          "background_text": "#f2693a",
+          "color_text": "#ffffff",
+          "color_shadow": "#000000",
+          "show_background_section": true,
+          "background_section": "#f2693a",
+          "section_contrast": false,
+          "show_margin": true,
+          "remove_margin_bottom": false,
+          "remove_margin_top": false
+        }
+      },
+      "16327066680f3167e3": {
+        "type": "image-with-text",
+        "blocks": {
+          "16327066680f3167e3-0": {
+            "type": "heading",
+            "settings": {
+              "title": "Image with text",
+              "text_max_width": 32
+            }
+          },
+          "16327066680f3167e3-1": {
+            "type": "subheading",
+            "settings": {
+              "subheading": "<p>Women’s hoops- we hear you. We are the first brand entirely dedicated to celebrating women’s basketball. We’re starting by dropping sneakers that are built specifically for women’s basketball players.<br\/>We know that your game starts from the ground up, so lace up in sneakers that were crafted to compliment your game.<br\/>Be part of growing a culture unique to women’s hoops. Wear sneakers that let you carve your own lane, and bet on yourself.<\/p>",
+              "text_max_width": 32,
+              "font_size": 20
+            }
+          },
+          "6e23f838-0b8f-4b6b-99c3-15ac06f1b4ff": {
+            "type": "button",
+            "settings": {
+              "link": "shopify:\/\/collections\/all",
+              "link_text": "SHOP NOW"
+            }
+          }
+        },
+        "block_order": [
+          "16327066680f3167e3-0",
+          "16327066680f3167e3-1",
+          "6e23f838-0b8f-4b6b-99c3-15ac06f1b4ff"
+        ],
+        "settings": {
+          "use_shadow": true,
+          "shadow_color": "#000000",
+          "image_position": "right",
+          "image_width": "half",
+          "aspect_ratio": "natural",
+          "text_alignment": "center",
+          "shadow_text": false,
+          "background_text": "#f2693a",
+          "color_text": "#ffffff",
+          "color_shadow": "#000000",
+          "show_background_section": true,
+          "background_section": "#72cbcb",
+          "section_contrast": false,
+          "show_margin": true,
+          "remove_margin_bottom": false,
+          "remove_margin_top": false
+        }
+      },
+      "16327088617c40ca34": {
+        "type": "headline-bar",
+        "blocks": {
+          "cc44106f-d76c-49c0-959c-be9e86f86424": {
+            "type": "text",
+            "settings": {
+              "text": "Lorem Impsum"
+            }
+          },
+          "b2ab2e29-55c2-4d46-b615-b712b2ac26ab": {
+            "type": "text",
+            "settings": {
+              "text": "Lorem Impsum"
+            }
+          },
+          "a459e2a0-9678-4cda-ba76-9a08288394b3": {
+            "type": "text",
+            "settings": {
+              "text": "Lorem Impsum"
+            }
+          },
+          "7e7b7c7d-5f58-4893-a45c-9dadc72f17f7": {
+            "type": "text",
+            "settings": {
+              "text": "Lorem Impsum"
+            }
+          },
+          "1c0d4bba-2f32-4d2d-b643-04268680322d": {
+            "type": "text",
+            "settings": {
+              "text": "Lorem Impsum"
+            }
+          },
+          "24072f73-f200-4765-bcd6-6e64842de903": {
+            "type": "text",
+            "settings": {
+              "text": "Lorem Impsum"
+            }
+          },
+          "782d3d78-ade1-44b4-859e-e9c1ed8eb0b6": {
+            "type": "text",
+            "settings": {
+              "text": "Lorem Impsum"
+            }
+          }
+        },
+        "block_order": [
+          "cc44106f-d76c-49c0-959c-be9e86f86424",
+          "b2ab2e29-55c2-4d46-b615-b712b2ac26ab",
+          "a459e2a0-9678-4cda-ba76-9a08288394b3",
+          "7e7b7c7d-5f58-4893-a45c-9dadc72f17f7",
+          "1c0d4bba-2f32-4d2d-b643-04268680322d",
+          "24072f73-f200-4765-bcd6-6e64842de903",
+          "782d3d78-ade1-44b4-859e-e9c1ed8eb0b6"
+        ],
+        "settings": {
+          "background": "#f9c94c",
+          "text": "#000000"
+        }
+      },
+      "1632708865d79df7c7": {
+        "type": "image-with-text",
+        "blocks": {
+          "1632708865d79df7c7-0": {
+            "type": "heading",
+            "settings": {
+              "title": "DIFFERENT IS OUR DNI",
+              "text_max_width": 32
+            }
+          },
+          "1632708865d79df7c7-1": {
+            "type": "subheading",
+            "settings": {
+              "subheading": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sollicitudin nibh massa, quis luctus mi cursus eu. Cras volutpat libero lectus, et accumsan sem vehicula eu.<\/p>",
+              "text_max_width": 32,
+              "font_size": 20
+            }
+          },
+          "da662207-77e4-41a4-be09-d1756df87772": {
+            "type": "numbers",
+            "settings": {
+              "number_1": "Slim Width",
+              "number_2": "Lifted Arch",
+              "number_3": "Shallow Lateral Side",
+              "number_4": "Narrow Heel"
+            }
+          }
+        },
+        "block_order": [
+          "1632708865d79df7c7-0",
+          "1632708865d79df7c7-1",
+          "da662207-77e4-41a4-be09-d1756df87772"
+        ],
+        "settings": {
+          "use_shadow": false,
+          "shadow_color": "#f9c94c",
+          "image_position": "left",
+          "image_width": "half",
+          "aspect_ratio": "natural",
+          "text_alignment": "left",
+          "shadow_text": false,
+          "background_text": "#f2693a",
+          "color_text": "#ffffff",
+          "color_shadow": "#000000",
+          "show_background_section": false,
+          "background_section": "",
+          "section_contrast": false,
+          "show_margin": false,
+          "remove_margin_bottom": false,
+          "remove_margin_top": true
+        }
+      },
+      "163271046310a04fff": {
+        "type": "meet-the-team",
+        "blocks": {
+          "861a1091-6130-43f9-8ac4-a421afdcd9bb": {
+            "type": "team_member",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Member.png",
+              "name": "Natalie White",
+              "role": "CEO & Founder"
+            }
+          },
+          "bdff92f5-8afb-4971-aede-8b0f1d1f9622": {
+            "type": "team_member",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Member.png",
+              "name": "Juan Perez Lopes",
+              "role": "Project Managment"
+            }
+          },
+          "3542d5cb-bb82-45f8-afd4-f8ed3e5b9e88": {
+            "type": "team_member",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Member.png",
+              "name": "Florencia Starovska",
+              "role": "Business consultant"
+            }
+          }
+        },
+        "block_order": [
+          "861a1091-6130-43f9-8ac4-a421afdcd9bb",
+          "bdff92f5-8afb-4971-aede-8b0f1d1f9622",
+          "3542d5cb-bb82-45f8-afd4-f8ed3e5b9e88"
+        ],
+        "settings": {
+          "title": "Meet the team",
+          "subheading": "",
+          "link_text": "",
+          "text_max_width": 36,
+          "color": "#000000",
+          "background": "#f9c94c",
+          "color_text": "#000000"
+        }
+      }
+    },
+    "order": [
+      "main",
+      "16327066154e592d11",
+      "16327066192148ebcb",
+      "16327066680f3167e3",
+      "16327088617c40ca34",
+      "1632708865d79df7c7",
+      "163271046310a04fff"
+    ]
+  }

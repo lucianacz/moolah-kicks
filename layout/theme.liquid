@@ -45,6 +45,12 @@
   {{ 'custom.css' | asset_url | stylesheet_tag }}
 
   {{ content_for_header }}
+  <script>
+    window.closeby = {
+      mapKey: "ad7be43c6cdac67090df16d3df08384d"
+    };
+  </script>
+  <script src="https://embed.closeby.co/v1.js" async defer></script>
 </head>
 
 <body

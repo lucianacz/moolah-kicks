@@ -105,10 +105,23 @@
             {%- unless block.settings.subheading == blank -%}
               <div
                 class="image-with-text__subheading rte ff-body fs-body-base fs-body-large-ns"
-                style="--text-max-width: {{  block.settings.text_max_width }}rem; font-size: {{ block.settings.font_size }}px"
-              >
+                style="--text-max-width: {{  block.settings.text_max_width }}rem;">
                 {{ block.settings.subheading }}
               </div>
+              
+             {% style %}
+                @media (min-width: 960px){
+                  .section[data-section-id="{{ section.id }}"] .image-with-text__subheading{
+                    font-size: {{ block.settings.font_size }}px;
+                  }
+                }
+
+                @media (max-width: 959px){
+                  .section[data-section-id="{{ section.id }}"] .image-with-text__subheading{
+                    font-size: {{ block.settings.font_size_mobile }}px;
+                  }
+                }
+              {% endstyle %}
             {%- endunless -%}
 
           {%- when 'button' -%}
@@ -117,6 +130,43 @@
                 {{ block.settings.link_text }}
               </a>
             {%- endif -%}
+
+          {%- when 'numbers' -%}
+          {%- if block.settings.number_1 != blank or
+            block.settings.number_2 != blank or
+            block.settings.number_3 != blank or
+            block.settings.number_4 != blank -%}
+          <div class="numbers--container">
+            {%- if block.settings.number_1 != blank -%}
+            <div class="numbers--content">
+              <div class="number" style="background: {{ block.settings.background }}; color: {{ block.settings.color }}">1</div>
+              <div class="number--text">{{ block.settings.number_1 }}</div>
+            </div>
+            {%- endif -%}
+
+            {%- if block.settings.number_2 != blank -%}
+            <div class="numbers--content">
+              <div class="number" style="background: {{ block.settings.background }}; color: {{ block.settings.color }}">2</div>
+              <div class="number--text">{{ block.settings.number_2 }}</div>
+            </div>
+            {%- endif -%}
+
+            {%- if block.settings.number_3 != blank -%}
+            <div class="numbers--content">
+              <div class="number" style="background: {{ block.settings.background }}; color: {{ block.settings.color }}">3</div>
+              <div class="number--text">{{ block.settings.number_3 }}</div>
+            </div>
+            {%- endif -%}
+
+            {%- if block.settings.number_4 != blank -%}
+            <div class="numbers--content">
+              <div class="number" style="background: {{ block.settings.background }}; color: {{ block.settings.color }}">4</div>
+              <div class="number--text">{{ block.settings.number_4 }}</div>
+            </div>
+            {%- endif -%}
+
+          </div>
+          {%- endif -%}
 
         {%- endcase -%}
       {%- endfor -%}
@@ -354,6 +404,16 @@
             "max": 60,
             "step": 1,
             "default": 20
+          },
+          {
+            "type": "range",
+            "id": "font_size_mobile",
+            "label": "Font size mobile",
+            "unit": "px",
+            "min": 15,
+            "max": 60,
+            "step": 1,
+            "default": 20
           }
         ]
       },
@@ -372,6 +432,53 @@
             "type": "text",
             "label": "t:sections.image_with_text.blocks.button.settings.link_text.label",
             "default": "Read more"
+          }
+        ]
+      },
+      {
+        "type": "numbers",
+        "name": "Numbers",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "text",
+            "id": "number_1",
+            "label": "Number 1",
+            "default": "Slim Width"
+          },
+          {
+            "type": "text",
+            "id": "number_2",
+            "label": "Number 2",
+            "default": "Lifted Arch"
+          },
+          {
+            "type": "text",
+            "id": "number_3",
+            "label": "Number 3",
+            "default": "Shallow Lateral Side"
+          },
+          {
+            "type": "text",
+            "id": "number_4",
+            "label": "Number 4",
+            "default": "Narrow Heel"
+          },
+          {
+            "type": "header",
+            "content": "Color"
+          },
+          {
+            "type": "color",
+            "id": "background",
+            "label": "Background number",
+            "default": "#f2693b"
+          },
+          {
+            "type": "color",
+            "id": "color",
+            "label": "Text",
+            "default": "#fff"
           }
         ]
       }
