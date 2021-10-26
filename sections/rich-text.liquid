@@ -15,7 +15,7 @@
         {%- when 'heading' -%}
           {%- unless block.settings.title == blank -%}
             <h2
-              class="rich-text__heading ff-heading fs-heading-2-base fs-heading-1-base-ns"
+              class="rich-text__heading ff-heading fs-heading-2-large"
               style="--text-max-width: {{ block.settings.text_max_width }}rem; color: {{ section.settings.color }}"
             >
               {{ block.settings.title | newline_to_br }}
@@ -25,7 +25,7 @@
         {%- when 'text' -%}
           {%- unless block.settings.subheading == blank -%}
             <div
-              class="rich-text__subheading rte ff-body fs-body-base fs-body-large-ns"
+              class="rich-text__subheading rte ff-body fs-body-base fs-heading-4-base-ns"
               style="--text-max-width: {{ block.settings.text_max_width }}rem; color: {{ section.settings.color }}"
             >
               {{ block.settings.subheading }}

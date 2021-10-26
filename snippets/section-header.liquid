@@ -7,11 +7,15 @@
       assign button_classes = 'btn--medium'
     endif
   -%}
+  {% assign number = '1-base' %}
+  {% if title_smaller %}
+    {% assign number = '2-large' %}
+  {% endif %}
   <div class="section-header {{ classes }}
   {% if horizontal %} text-horizontal {% endif %}"
   {% if color != blank %} style="color: {{ section.settings.color }}" {% endif %}>
     {%- unless heading == blank -%}
-      <h2 class="section-header__heading ff-heading fs-heading-2-base fs-heading-1-base-ns">
+      <h2 class="section-header__heading ff-heading fs-heading-{{ number }}">
         {{ heading | newline_to_br }}
       </h2>
     {%- endunless -%}

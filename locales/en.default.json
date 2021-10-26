@@ -323,7 +323,7 @@
   "products": {
     "product": {
       "regular_price": "Regular price",
-      "sold_out": "Sold out",
+      "sold_out": "Dropping soon",
       "unavailable": "Unavailable",
       "on_sale": "Sale",
       "on_sale_percent": "{{ value }}% off",
@@ -394,7 +394,7 @@
     "add_to_cart": "Add to cart",
     "quick_add": "Quick Add",
     "share": "Share",
-    "sold_out": "Sold out",
+    "sold_out": "Dropping soon",
     "reviews": "Reviews",
     "unavailable": "Unavailable"
   },

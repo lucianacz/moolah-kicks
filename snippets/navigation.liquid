@@ -34,7 +34,7 @@
           aria-haspopup="true"
           aria-expanded="false"
         >
-          {{ link.title }}
+          {{ link.title | upcase }}
           <span class="header__links-icon">
             {% render 'icon' with icon: 'chevron' %}
           </span>
@@ -54,7 +54,7 @@
           data-link
           {% if link.active %}aria-current="page"{% endif %}
         >
-          {{ link.title }}
+          {{ link.title | upcase  }}
         </a>
       {%- endif -%}
     </li>
