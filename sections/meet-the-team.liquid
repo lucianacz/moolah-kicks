@@ -13,9 +13,13 @@
     {% if section.blocks.size > 0 %}      
       <div class="team--container">
         {%- for block in section.blocks -%}
-          <div class="member--container">
+          <div class="member--container {% if block.settings.image_hover != blank %}member--container--hover{% endif %}">
             {% if block.settings.image != blank %}
-              <img src="{{ block.settings.image | img_url: 'master'}}" alt="{{ block.settings.image.alt }}">
+              <img class="featured-image" src="{{ block.settings.image | img_url: 'master'}}" alt="{{ block.settings.image.alt }}">
+            {% endif %}
+
+            {% if block.settings.image_hover != blank %}
+              <img class="featured-image-hover" src="{{ block.settings.image_hover | img_url: 'master'}}" alt="{{ block.settings.image_hover.alt }}">
             {% endif %}
 
             <div class="member--container-text" style="background: {{ section.settings.background }}; color: {{ section.settings.color_text }}">
@@ -96,7 +100,12 @@
           {
               "type": "image_picker",
               "id": "image",
-              "label": "image"
+              "label": "Image"
+          },
+          {
+            "type": "image_picker",
+            "id": "image_hover",
+            "label": "Image hover"
           },
           {
             "id": "name",

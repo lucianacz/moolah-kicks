@@ -81,13 +81,26 @@
 
               {%- when 'subheading' -%}
                 <div
-                  class="video-hero__subheading ff-body fs-body-large animate"
+                  class="video-hero__subheading ff-body animate video-hero__subheading--{{ block.id }}"
                   style="
                     --color-text: {{ section.settings.color_text }};
                     --text-max-width: {{ block.settings.text_max_width }}rem;
-                    --heading-font-size: {{ block.settings.heading_text_size }}px;
                   "
                 >
+
+                {% style %}
+                @media (min-width: 1024px){
+                  .video-hero__video-wrapper .video-hero__subheading--{{ block.id }}{
+                    font-size: {{ block.settings.font_size }}px;
+                  }
+                }
+
+                @media (max-width: 1023px){
+                  .video-hero__video-wrapper .video-hero__subheading--{{ block.id }}{
+                    font-size: calc({{ block.settings.font_size }}px / 1.5);
+                  }
+                }
+                {% endstyle %}
                   {{ block.settings.subheading }}
                 </div>
 
@@ -273,6 +286,16 @@
             "max": 50,
             "step": 2,
             "default": 40
+          },
+          {
+            "type": "range",
+            "id": "font_size",
+            "label": "Font size",
+            "unit": "px",
+            "min": 20,
+            "max": 50,
+            "step": 1,
+            "default": 30
           }
         ]
       },

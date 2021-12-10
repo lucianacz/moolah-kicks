@@ -237,19 +237,37 @@
                           {{ option.name }}
                         </label>
 
-                        {% if show_popup_trigger %}
-                          <button
-                            type="button"
-                            class="variant-popup__trigger btn btn--text-link"
-                            data-variant-popup-trigger
-                            data-modal-content-id="modal-{{ block.settings.variant_popup_page }}"
-                          >
-                            {{ block.settings.variant_popup_text }}
-                          </button>
-                          <div id="modal-{{ block.settings.variant_popup_page }}" class="variant-popup__content modal-content">
-                            <h2 class="ff-heading fs-heading-2-large">{{ variant_popup_page.title }}</h2>
-                            {{ variant_popup_page.content }}
-                          </div>
+                        
+                        {% if show_popup_trigger %}        
+                        {% if block.settings.product_type != blank %}  
+                          {% if product.type == block.settings.product_type %}  
+                            <button
+                              type="button"
+                              class="variant-popup__trigger btn btn--text-link"
+                              data-variant-popup-trigger
+                              data-modal-content-id="modal-{{ block.settings.variant_popup_page }}"
+                            >
+                              {{ block.settings.variant_popup_text }}
+                            </button>
+                            <div id="modal-{{ block.settings.variant_popup_page }}" class="variant-popup__content modal-content">
+                              <h2 class="ff-heading fs-heading-2-large">{{ variant_popup_page.title }}</h2>
+                              {{ variant_popup_page.content }}
+                            </div>
+                          {% endif %}         
+                          {% else %}
+                              <button
+                              type="button"
+                              class="variant-popup__trigger btn btn--text-link"
+                              data-variant-popup-trigger
+                              data-modal-content-id="modal-{{ block.settings.variant_popup_page }}"
+                            >
+                              {{ block.settings.variant_popup_text }}
+                            </button>
+                            <div id="modal-{{ block.settings.variant_popup_page }}" class="variant-popup__content modal-content">
+                              <h2 class="ff-heading fs-heading-2-large">{{ variant_popup_page.title }}</h2>
+                              {{ variant_popup_page.content }}
+                            </div>
+                        {% endif %}
                         {% endif %}
                       </div>
 
@@ -671,6 +689,11 @@
             "id": "variant_popup_page",
             "label": "t:sections.main_product_overview.blocks.variant_picker.settings.variant_popup_page.label",
             "info": "t:sections.main_product_overview.blocks.variant_picker.settings.variant_popup_page.info"
+          },
+          {
+            "type": "text",
+            "id": "product_type",
+            "label": "Product type"
           }
         ]
       },

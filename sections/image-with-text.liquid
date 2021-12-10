@@ -43,6 +43,7 @@
     {% if section.settings.section_contrast -%}
       section--contrast
     {%- endif %}
+    {% if section.settings.height_100 %}height-100-image{% endif %}
   "
   data-section-id="{{ section.id }}"
   data-section-type="image-with-text"
@@ -87,7 +88,7 @@
       {%- endif -%}
     </div>
 
-    <div class="image-with-text__text-container {% unless margin %} section__inner {% endunless %}">
+    <div class="image-with-text__text-container {% unless margin %} section__inner {% endunless %} {% if section.settings.full_text %}full-text-width{% endif %}">
       {% if section.settings.shadow_text %}<div class="shadow_text">{% endif %}
       {%- for block in section.blocks -%}
         {%- case block.type -%}
@@ -95,7 +96,10 @@
             {%- unless block.settings.title == blank -%}
               <h2
                 class="image-with-text__heading ff-heading fs-heading-2-base fs-heading-1-base-ns"
-                style="--text-max-width: {{  block.settings.text_max_width }}rem;"
+                style="--text-max-width: {{  block.settings.text_max_width }}rem;
+                {% if block.settings.color != blank %}
+                  color: {{ block.settings.color }}
+                {% endif %}"
               >
                 {{ block.settings.title | newline_to_br }}
               </h2>
@@ -105,7 +109,11 @@
             {%- unless block.settings.subheading == blank -%}
               <div
                 class="image-with-text__subheading rte ff-body fs-body-base fs-body-large-ns"
-                style="--text-max-width: {{  block.settings.text_max_width }}rem;">
+                style="--text-max-width: {{  block.settings.text_max_width }}rem;
+                margin-top: {{ block.settings.margin_top }}px;
+                {% if block.settings.color != blank %}
+                  color: {{ block.settings.color }}
+                {% endif %}">
                 {{ block.settings.subheading }}
               </div>
               
@@ -126,7 +134,8 @@
 
           {%- when 'button' -%}
             {%- if block.settings.link != blank and block.settings.link_text != blank -%}
-              <a href="{{ block.settings.link }}" class="image-with-text__button fs-body-base btn btn--primary btn--medium">
+              <a href="{{ block.settings.link }}" class="image-with-text__button fs-body-base btn btn--primary btn--medium"
+              {% if block.settings.new_tab %}target="_blank"{% endif %}>
                 {{ block.settings.link_text }}
               </a>
             {%- endif -%}
@@ -176,6 +185,12 @@
 </div>
 
 {% style %}
+
+.image-with-text[data-section-id="{{ section.id }}"] .shadow_text{
+  background: {{ section.settings.background_text }};
+  color: {{ section.settings.color_text}};
+}
+
 @media (min-width: 960px){
   .image-with-text[data-section-id="{{ section.id }}"] .image-with-text__image-container-inner.box-shadow{
     box-shadow: 15px 15px 0 {{ section.settings.shadow_color}};
@@ -183,16 +198,14 @@
 
   .image-with-text[data-section-id="{{ section.id }}"] .shadow_text{
     box-shadow: 15px 15px 0 {{ section.settings.color_shadow }};
-    background: {{ section.settings.background_text }};
-    color: {{ section.settings.color_text}};
   }
+}
 
-  .section[data-section-id="{{ section.id }}"].remove-margin-bottom {
-    margin-bottom: 0;
-  }
-  .section[data-section-id="{{ section.id }}"].remove-margin-top {
-    margin-top: 0;
-  }
+.section[data-section-id="{{ section.id }}"].remove-margin-bottom {
+  margin-bottom: 0;
+}
+.section[data-section-id="{{ section.id }}"].remove-margin-top {
+  margin-top: 0;
 }
 
 @media (max-width: 959px){
@@ -267,6 +280,12 @@
           { "label": "t:sections.image_with_text.settings.aspect_ratio.options__4", "value": "portrait" }
         ],
         "default": "natural"
+      },
+      {
+        "type": "checkbox",
+        "id": "height_100",
+        "label": "Height Image 100%",
+        "default": false
       },
       {
         "type": "select",
@@ -350,6 +369,13 @@
         "id": "remove_margin_top",
         "label": "Remove margin top",
         "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "full_text",
+        "label": "Full text width",
+        "info": "Only for mobile",
+        "default": false
       }
     ],
     "blocks": [
@@ -371,6 +397,11 @@
             "max": 48,
             "step": 1,
             "default": 32
+          },
+          {
+            "type": "color",
+            "id": "color",
+            "label": "Color"
           }
         ]
       },
@@ -413,6 +444,21 @@
             "max": 60,
             "step": 1,
             "default": 20
+          },
+          {
+            "type": "color",
+            "id": "color",
+            "label": "Color"
+          },
+          {
+            "type": "range",
+            "id": "margin_top",
+            "label": "Margin top",
+            "unit": "px",
+            "min": 0,
+            "max": 15,
+            "step": 1,
+            "default": 12
           }
         ]
       },
@@ -431,6 +477,12 @@
             "type": "text",
             "label": "t:sections.image_with_text.blocks.button.settings.link_text.label",
             "default": "Read more"
+          },
+          {
+            "type": "checkbox",
+            "id": "new_tab",
+            "label": "New tab",
+            "default": false
           }
         ]
       },
