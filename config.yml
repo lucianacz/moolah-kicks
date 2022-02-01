@@ -2,5 +2,3 @@ development:
   password: shptka_2fafeb0ab000d1a1e2d12377ef15fcf5
   theme_id: "127284412580"
   store: moolah-kicks.myshopify.com
-  ignore_files:
-    - config/settings_data.json

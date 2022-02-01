@@ -1,0 +1,561 @@
+{
+  "current": {
+    "color_background_body": "#ffffff",
+    "color_border": "#d4d4d4",
+    "color_overlay": "#181818",
+    "color_text": "#1d1d1d",
+    "color_text_link": "#000000",
+    "color_header_bg": "#ffffff",
+    "color_header_text": "#000000",
+    "color_background_footer": "#72cbcb",
+    "color_background_footer_collection": "#f9c94c",
+    "color_text_footer": "#000000",
+    "color_background_button": "#FFFFFF",
+    "color_text_button": "#000000",
+    "color_background_sold_badge": "#f9c94c",
+    "color_text_sold_badge": "#000000",
+    "color_background_contrast": "#f4f4f4",
+    "color_text_contrast": "#000000",
+    "color_border_contrast": "#d4d4d4",
+    "color_background_button_contrast": "#000000",
+    "color_text_button_contrast": "#ffffff",
+    "color_text_link_contrast": "#000000",
+    "color_background_popover": "#fff",
+    "color_text_popover": "#000000",
+    "color_border_popover": "#3D3D3D",
+    "color_background_button_popover": "#ffffff",
+    "color_text_button_popover": "#131313",
+    "custom_font": true,
+    "font_logo": "frutiger_serif_n7",
+    "capitalize_logo": false,
+    "logo_letter_spacing": 0,
+    "logo_base_size": 37,
+    "font_heading": "frutiger_serif_n7",
+    "heading_letter_spacing": -25,
+    "heading_base_size": 48,
+    "font_body": "assistant_n4",
+    "capitalize_product_title": true,
+    "product_title_letter_spacing": 25,
+    "enable_page_transitions": false,
+    "button_shape": "0",
+    "swatch_options": "Material",
+    "social_facebook_link": "https:\/\/www.facebook.com\/moolahkicks\/",
+    "social_instagram_link": "https:\/\/www.instagram.com\/moolahkicks\/",
+    "social_pinterest_link": "",
+    "social_snapchat_link": "",
+    "social_tumblr_link": "",
+    "social_twitter_link": "",
+    "favicon": "shopify:\/\/shop_images\/Favicon.png",
+    "checkout_logo_image": "shopify:\/\/shop_images\/MOOLAH_Logo-Black.png",
+    "checkout_logo_position": "center",
+    "checkout_accent_color": "#72cbcb",
+    "checkout_button_color": "#72cbcb",
+    "variant_popup_page": "size-guide",
+    "color_border_header": "#363636",
+    "sections": {
+      "announcement-bar": {
+        "type": "announcement-bar",
+        "settings": {
+          "timing": 10
+        }
+      },
+      "header": {
+        "type": "header",
+        "settings": {
+          "logo": "shopify:\/\/shop_images\/MOOLAH_Logo-Black.png",
+          "logo_max_width": 150,
+          "menu": "main-menu",
+          "secondary_menu": "",
+          "style": "inline",
+          "navigation_position": "inline",
+          "logo_position": "center",
+          "enable_transparent_home": true,
+          "color_text_transparent": "#ffffff",
+          "color_icon_transparent": "#ffffff",
+          "color_count_transparent": "#000000",
+          "color_border_transparent": "#ffffff",
+          "opacity_border_transparent": 0,
+          "logo_transparent": "shopify:\/\/shop_images\/MOOLAH_Logo-WHITE.png"
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "22394d04-4cf4-4c1c-bf11-d9653b765d96": {
+            "type": "menu",
+            "settings": {
+              "title": "Moolah Kicks",
+              "link_list": "footer"
+            }
+          },
+          "3f72f452-3c65-4947-9740-166da2dc03a9": {
+            "type": "menu",
+            "settings": {
+              "title": "Policies",
+              "link_list": "polices"
+            }
+          },
+          "67e68dab-aef8-4666-a46a-9e63e65ea23e": {
+            "type": "text",
+            "settings": {
+              "title": "Contact us",
+              "text": "<p><a href=\"mailto:hello@moolahkicks.com\" target=\"_blank\" title=\"mailto:hello@moolahkicks.com\">hello@moolahkicks.com<\/a><\/p>"
+            }
+          },
+          "newsletter-1": {
+            "type": "newsletter",
+            "settings": {
+              "title": "Newsletter",
+              "text": "<p>Subscribe for store updates and discounts.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "22394d04-4cf4-4c1c-bf11-d9653b765d96",
+          "3f72f452-3c65-4947-9740-166da2dc03a9",
+          "67e68dab-aef8-4666-a46a-9e63e65ea23e",
+          "newsletter-1"
+        ],
+        "settings": {
+          "show_locale_selector": true,
+          "show_currency_selector": true,
+          "show_social_icons": true,
+          "show_payment_icons": true
+        }
+      },
+      "popup": {
+        "type": "popup",
+        "blocks": {
+          "popup-0": {
+            "type": "heading",
+            "settings": {
+              "title": "Subscribe",
+              "subheading": "<p>We only send emails once or twice a month and only about good things.<\/p>"
+            }
+          },
+          "popup-1": {
+            "type": "newsletter_signup",
+            "settings": {}
+          }
+        },
+        "block_order": [
+          "popup-0",
+          "popup-1"
+        ],
+        "settings": {
+          "enable_popup": false,
+          "image_position": "center",
+          "color_text": "#ffffff",
+          "color_text_button": "#1c2232",
+          "color_background_button": "#ffffff",
+          "color_overlay": "#181818",
+          "overlay_opacity": 10
+        }
+      }
+    },
+    "content_for_index": []
+  },
+  "presets": {
+    "Chic": {
+      "color_background_body": "#ffffff",
+      "color_border": "#d4d4d4",
+      "color_overlay": "#181818",
+      "color_text": "#1d1d1d",
+      "color_text_link": "#000000",
+      "color_header_bg": "#000000",
+      "color_header_text": "#ffffff",
+      "color_background_footer": "#F4F4F4",
+      "color_text_footer": "#1D1D1D",
+      "color_background_button": "#191919",
+      "color_background_contrast": "#f4f4f4",
+      "color_text_contrast": "#000000",
+      "color_border_contrast": "#d4d4d4",
+      "color_background_button_contrast": "#000000",
+      "color_text_button_contrast": "#ffffff",
+      "color_text_link_contrast": "#000000",
+      "color_background_popover": "#131313",
+      "color_border_popover": "#3D3D3D",
+      "color_background_button_popover": "#ffffff",
+      "color_text_button_popover": "#131313",
+      "font_logo": "frutiger_serif_n7",
+      "capitalize_logo": false,
+      "logo_letter_spacing": 0,
+      "logo_base_size": 37,
+      "font_heading": "frutiger_serif_n7",
+      "heading_letter_spacing": -25,
+      "heading_base_size": 48,
+      "font_body": "assistant_n4",
+      "capitalize_product_title": true,
+      "product_title_letter_spacing": 25,
+      "button_shape": "0",
+      "swatch_options": "Material",
+      "variant_popup_page": "size-guide",
+      "social_twitter_link": "",
+      "social_facebook_link": "",
+      "social_pinterest_link": "",
+      "social_instagram_link": "",
+      "social_snapchat_link": "",
+      "social_tumblr_link": "",
+      "color_border_header": "#363636",
+      "sections": {
+        "announcement-bar": {
+          "type": "announcement-bar",
+          "blocks": {
+            "announcement-bar-0": {
+              "type": "announcement",
+              "settings": {
+                "title": "Announce something here",
+                "link": "https:\/\/fluorescent.co\/help\/spark\/announcement-bar#set-up-the-announcement-bar",
+                "color_background": "#ffffff",
+                "color_text": "#000000"
+              }
+            },
+            "6babe932-3e75-48f4-8e66-f0777108ae33": {
+              "type": "announcement",
+              "settings": {
+                "title": "Announce something here",
+                "link": "https:\/\/fluorescent.co\/help\/spark\/announcement-bar#set-up-the-announcement-bar",
+                "color_background": "#ffffff",
+                "color_text": "#191919"
+              }
+            }
+          },
+          "block_order": [
+            "announcement-bar-0",
+            "6babe932-3e75-48f4-8e66-f0777108ae33"
+          ],
+          "settings": {
+            "timing": 4
+          }
+        },
+        "header": {
+          "type": "header",
+          "settings": {
+            "logo_max_width": 200,
+            "menu": "main-menu",
+            "style": "icon",
+            "navigation_position": "inline",
+            "logo_position": "center",
+            "enable_transparent_home": true,
+            "color_text_transparent": "#ffffff",
+            "color_icon_transparent": "#ffffff",
+            "color_count_transparent": "#000000",
+            "color_border_transparent": "#ffffff",
+            "opacity_border_transparent": 0
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "newsletter-1": {
+              "type": "newsletter",
+              "settings": {
+                "title": "Newsletter",
+                "text": "<p>Subscribe for store updates and discounts.<\/p>"
+              }
+            }
+          },
+          "block_order": [
+            "newsletter-1"
+          ],
+          "settings": {
+            "show_locale_selector": true,
+            "show_currency_selector": true,
+            "show_social_icons": true,
+            "show_payment_icons": true
+          }
+        },
+        "popup": {
+          "type": "popup",
+          "blocks": {
+            "popup-0": {
+              "type": "heading",
+              "settings": {
+                "title": "Subscribe",
+                "subheading": "<p>We only send emails once or twice a month and only about good things.<\/p>"
+              }
+            },
+            "popup-1": {
+              "type": "newsletter_signup",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "popup-0",
+            "popup-1"
+          ],
+          "settings": {
+            "enable_popup": true,
+            "image_position": "center",
+            "color_text": "#ffffff",
+            "color_text_button": "#1C2232",
+            "color_background_button": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 10
+          }
+        }
+      }
+    },
+    "Ecstatic": {
+      "color_border": "#e4e4e4",
+      "color_overlay": "#000000",
+      "color_header_bg": "#ffffff",
+      "color_background_footer": "#141415",
+      "color_text_footer": "#ffffff",
+      "color_background_button": "#151515",
+      "color_background_contrast": "#f9f9f9",
+      "color_text_contrast": "#232323",
+      "color_border_contrast": "#d9d9d9",
+      "color_text_popover": "#000000",
+      "color_background_popover": "#ffffff",
+      "font_logo": "oswald_n7",
+      "capitalize_logo": true,
+      "logo_base_size": 32,
+      "font_heading": "oswald_n7",
+      "capitalize_headings": true,
+      "heading_letter_spacing": 0,
+      "heading_base_size": 46,
+      "font_body": "ibm_plex_sans_n4",
+      "body_letter_spacing": 0,
+      "body_base_size": 18,
+      "capitalize_product_title": true,
+      "product_title_letter_spacing": 25,
+      "button_shape": "0",
+      "chip_options": "Lenses",
+      "variant_popup_option": "Lenses",
+      "variant_popup_text": "Learn more",
+      "variant_popup_page": "learn-more",
+      "social_twitter_link": "",
+      "social_facebook_link": "",
+      "social_pinterest_link": "",
+      "social_instagram_link": "",
+      "social_snapchat_link": "",
+      "color_border_header": "#e7e7e7",
+      "sections": {
+        "announcement-bar": {
+          "type": "announcement-bar",
+          "blocks": {
+            "announcement-bar-0": {
+              "type": "announcement",
+              "settings": {
+                "title": "Announce something here",
+                "link": "https:\/\/fluorescent.co\/help\/spark\/announcement-bar#set-up-the-announcement-bar",
+                "color_background": "#2a5ddf",
+                "color_text": "#ffffff"
+              }
+            },
+            "f82475f7-569c-49d7-9e26-b00dd828c2af": {
+              "type": "announcement",
+              "settings": {
+                "title": "Announce something here",
+                "link": "https:\/\/fluorescent.co\/help\/spark\/announcement-bar#set-up-the-announcement-bar",
+                "color_background": "#000000",
+                "color_text": "#ffffff"
+              }
+            }
+          },
+          "block_order": [
+            "announcement-bar-0",
+            "f82475f7-569c-49d7-9e26-b00dd828c2af"
+          ],
+          "settings": {
+            "timing": 4
+          }
+        },
+        "header": {
+          "type": "header",
+          "settings": {
+            "logo_max_width": 200,
+            "menu": "main-menu",
+            "secondary_menu": "",
+            "style": "inline",
+            "navigation_position": "inline",
+            "logo_position": "center",
+            "enable_transparent_home": false,
+            "color_text_transparent": "#ffffff",
+            "color_icon_transparent": "#ffffff",
+            "color_count_transparent": "#000000",
+            "color_border_transparent": "#ffffff",
+            "opacity_border_transparent": 20
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "newsletter-1": {
+              "type": "newsletter",
+              "settings": {
+                "title": "Newsletter",
+                "text": "<p>Subscribe for store updates and discounts.<\/p>"
+              }
+            }
+          },
+          "block_order": [
+            "newsletter-1"
+          ],
+          "settings": {
+            "show_locale_selector": true,
+            "show_currency_selector": true,
+            "show_social_icons": true,
+            "show_payment_icons": true
+          }
+        },
+        "popup": {
+          "type": "popup",
+          "blocks": {
+            "popup-0": {
+              "type": "heading",
+              "settings": {
+                "title": "Subscribe",
+                "subheading": "<p>We only send emails once or twice a month and only about good things.<\/p>"
+              }
+            },
+            "popup-1": {
+              "type": "newsletter_signup",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "popup-0",
+            "popup-1"
+          ],
+          "settings": {
+            "enable_popup": true,
+            "image_position": "center",
+            "color_text": "#ffffff",
+            "color_text_button": "#1C2232",
+            "color_background_button": "#ffffff",
+            "color_overlay": "#2a5ddf",
+            "overlay_opacity": 100
+          }
+        }
+      }
+    },
+    "Minimal": {
+      "color_border": "#dddde1",
+      "color_text_link": "#b75c4c",
+      "color_background_button": "#b75a4e",
+      "color_border_contrast": "#d8dade",
+      "color_background_button_contrast": "#1C2232",
+      "color_text_popover": "#1c2232",
+      "color_background_popover": "#fdfdfd",
+      "color_border_popover": "#c2c5cc",
+      "font_logo": "abril_fatface_n4",
+      "capitalize_logo": true,
+      "logo_letter_spacing": 0,
+      "logo_base_size": 40,
+      "font_heading": "georgia_pro_n7",
+      "capitalize_headings": false,
+      "heading_letter_spacing": 0,
+      "heading_base_size": 46,
+      "font_body": "ibm_plex_sans_n4",
+      "body_letter_spacing": 0,
+      "body_base_size": 18,
+      "variant_popup_page": "size-guide",
+      "social_twitter_link": "",
+      "social_facebook_link": "",
+      "social_pinterest_link": "",
+      "social_instagram_link": "",
+      "social_snapchat_link": "",
+      "sections": {
+        "announcement-bar": {
+          "type": "announcement-bar",
+          "blocks": {
+            "announcement-bar-0": {
+              "type": "announcement",
+              "settings": {
+                "title": "Announce something here",
+                "link": "https:\/\/fluorescent.co\/help\/spark\/announcement-bar#set-up-the-announcement-bar",
+                "color_background": "#1c2232",
+                "color_text": "#ffffff"
+              }
+            },
+            "edba0405-b6f3-4251-856a-bce93ff6b8f3": {
+              "type": "announcement",
+              "settings": {
+                "title": "Announce something here",
+                "link": "https:\/\/fluorescent.co\/help\/spark\/announcement-bar#set-up-the-announcement-bar",
+                "color_background": "#1c2232",
+                "color_text": "#ffffff"
+              }
+            }
+          },
+          "block_order": [
+            "announcement-bar-0",
+            "edba0405-b6f3-4251-856a-bce93ff6b8f3"
+          ],
+          "settings": {
+            "timing": 4
+          }
+        },
+        "header": {
+          "type": "header",
+          "settings": {
+            "logo_max_width": 200,
+            "menu": "main-menu",
+            "secondary_menu": "",
+            "style": "icon",
+            "navigation_position": "below",
+            "logo_position": "center",
+            "enable_transparent_home": true,
+            "color_text_transparent": "#ffffff",
+            "color_icon_transparent": "#ffffff",
+            "color_count_transparent": "#000000",
+            "color_border_transparent": "#ffffff",
+            "opacity_border_transparent": 20
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "newsletter-1": {
+              "type": "newsletter",
+              "settings": {
+                "title": "Newsletter",
+                "text": "<p>Subscribe for store updates and discounts.<\/p>"
+              }
+            }
+          },
+          "block_order": [
+            "newsletter-1"
+          ],
+          "settings": {
+            "show_locale_selector": true,
+            "show_currency_selector": true,
+            "show_social_icons": true,
+            "show_payment_icons": true
+          }
+        },
+        "popup": {
+          "type": "popup",
+          "blocks": {
+            "popup-0": {
+              "type": "heading",
+              "settings": {
+                "title": "Subscribe",
+                "subheading": "<p>We only send emails once or twice a month and only about good things.<\/p>"
+              }
+            },
+            "popup-1": {
+              "type": "newsletter_signup",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "popup-0",
+            "popup-1"
+          ],
+          "settings": {
+            "enable_popup": true,
+            "image_position": "center",
+            "color_text": "#ffffff",
+            "color_text_button": "#ffffff",
+            "color_background_button": "#1c2232",
+            "color_overlay": "#b75c4c",
+            "overlay_opacity": 100
+          }
+        }
+      }
+    }
+  }
+}

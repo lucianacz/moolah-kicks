@@ -405,6 +405,12 @@
     "name": "t:settings_schema.product.name",
     "settings": [
       {
+        "id": "show_dsgspage",
+        "type": "checkbox",
+        "label": "Show DSG page",
+        "default": true
+      },
+      {
         "id": "sale_badge_includes_percent",
         "type": "checkbox",
         "label": "t:settings_schema.product.settings.sale_badge_includes_percent.label",

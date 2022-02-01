@@ -2,15 +2,96 @@
   "sections": {
     "banner": {
       "type": "main-collection-banner",
-      "settings": {}
+      "settings": {
+        "show_collection_image": false,
+        "collection_image_aspect_ratio": "square",
+        "show_collection_description": false,
+        "text_max_width": 42
+      }
     },
     "product-grid": {
       "type": "main-collection-product-grid",
-      "settings": {}
+      "settings": {
+        "show_sort": false,
+        "show_filters": false,
+        "columns": 3,
+        "per_page": 12,
+        "pagination": "infinite",
+        "show_swatches_and_chips": false,
+        "aspect_ratio": "square"
+      }
+    },
+    "1632593877860b0e99": {
+      "type": "headline-bar",
+      "blocks": {
+        "771fed03-6607-43bf-b6dd-2b31245da0e4": {
+          "type": "text",
+          "settings": {
+            "text": "MAKE MOVES"
+          }
+        },
+        "eaa3fa78-ba55-4c4e-861b-383a68b87a6c": {
+          "type": "text",
+          "settings": {
+            "text": "MAKE MOVES"
+          }
+        },
+        "e527d0b6-4edf-4b57-b0cb-c9be38da6f58": {
+          "type": "text",
+          "settings": {
+            "text": "MAKE MOVES"
+          }
+        },
+        "fd292f05-a5cd-4dfe-bb67-4aadf14b5e9f": {
+          "type": "text",
+          "settings": {
+            "text": "MAKE MOVES"
+          }
+        },
+        "c122d6dc-a5d1-49fc-9fde-cc2c7d01578c": {
+          "type": "text",
+          "settings": {
+            "text": "MAKE MOVES"
+          }
+        },
+        "33521d18-5434-4e2e-aa21-0faeddbe6566": {
+          "type": "text",
+          "settings": {
+            "text": "MAKE MOVES"
+          }
+        },
+        "2e21fda0-76cb-47d3-8739-d7337b4eb59c": {
+          "type": "text",
+          "settings": {
+            "text": "MAKE MOVES"
+          }
+        },
+        "dd413ce1-18d9-4839-b95d-26d527bbf6be": {
+          "type": "text",
+          "settings": {
+            "text": "MAKE MOVES"
+          }
+        }
+      },
+      "block_order": [
+        "771fed03-6607-43bf-b6dd-2b31245da0e4",
+        "eaa3fa78-ba55-4c4e-861b-383a68b87a6c",
+        "e527d0b6-4edf-4b57-b0cb-c9be38da6f58",
+        "fd292f05-a5cd-4dfe-bb67-4aadf14b5e9f",
+        "c122d6dc-a5d1-49fc-9fde-cc2c7d01578c",
+        "33521d18-5434-4e2e-aa21-0faeddbe6566",
+        "2e21fda0-76cb-47d3-8739-d7337b4eb59c",
+        "dd413ce1-18d9-4839-b95d-26d527bbf6be"
+      ],
+      "settings": {
+        "background": "#f2693a",
+        "text": "#000000"
+      }
     }
   },
   "order": [
     "banner",
-    "product-grid"
+    "product-grid",
+    "1632593877860b0e99"
   ]
 }

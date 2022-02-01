@@ -1,349 +1,29 @@
 {
   "sections": {
-    "slideshow-1": {
-      "type": "slideshow",
-      "blocks": {
-        "slide-1": {
-          "type": "slide",
-          "settings": {
-            "link": "https:\/\/fluorescent.co\/help\/spark\/slideshow"
-          }
-        },
-        "slide-2": {
-          "type": "slide",
-          "settings": {
-            "link": "https:\/\/fluorescent.co\/help\/spark\/slideshow"
-          }
-        }
-      },
-      "block_order": [
-        "slide-1",
-        "slide-2"
-      ],
-      "settings": {}
-    },
-    "text-columns-with-images": {
-      "type": "text-columns-with-images",
-      "blocks": {
-        "column-1": {
-          "type": "column",
-          "settings": {}
-        },
-        "column-2": {
-          "type": "column",
-          "settings": {}
-        },
-        "column-3": {
-          "type": "column",
-          "settings": {}
-        },
-        "column-4": {
-          "type": "column",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "column-1",
-        "column-2",
-        "column-3",
-        "column-4"
-      ],
-      "settings": {}
-    },
-    "image-with-text-1": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {}
-        },
-        "subheading": {
-          "type": "subheading",
-          "settings": {}
-        },
-        "button": {
-          "type": "button",
-          "settings": {
-            "link": "https:\/\/fluorescent.co\/help\/spark\/image-with-text",
-            "link_text": "Learn more"
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "subheading",
-        "button"
-      ],
-      "settings": {}
-    },
-    "logo-list": {
-      "type": "logo-list",
-      "blocks": {
-        "logo-1": {
-          "type": "logo",
-          "settings": {}
-        },
-        "logo-2": {
-          "type": "logo",
-          "settings": {}
-        },
-        "logo-3": {
-          "type": "logo",
-          "settings": {}
-        },
-        "logo-4": {
-          "type": "logo",
-          "settings": {}
-        },
-        "logo-5": {
-          "type": "logo",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "logo-1",
-        "logo-2",
-        "logo-3",
-        "logo-4",
-        "logo-5"
-      ],
-      "settings": {}
-    },
     "video-hero": {
       "type": "video-hero",
       "blocks": {
         "heading": {
           "type": "heading",
-          "settings": {}
+          "settings": {
+            "title": "<p>THE WAIT IS OVER<\/p>",
+            "heading_text_size": 68,
+            "text_max_width": 60
+          }
         },
         "subheading": {
           "type": "subheading",
-          "settings": {}
+          "settings": {
+            "subheading": "<p>COP THE PHANTOM 1’S<\/p>",
+            "text_max_width": 40,
+            "font_size": 41
+          }
         },
         "button": {
           "type": "button",
           "settings": {
-            "link_text": "Learn more",
-            "link": "https:\/\/fluorescent.co\/help\/spark\/video-hero"
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "subheading",
-        "button"
-      ],
-      "settings": {}
-    },
-    "image-with-features": {
-      "type": "image-with-features",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {}
-        },
-        "feature-1": {
-          "type": "feature",
-          "settings": {}
-        },
-        "feature-2": {
-          "type": "feature",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "heading",
-        "feature-1",
-        "feature-2"
-      ],
-      "settings": {}
-    },
-    "quote": {
-      "type": "quote",
-      "blocks": {
-        "quote": {
-          "type": "quote",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "quote"
-      ],
-      "settings": {}
-    },
-    "slideshow-2": {
-      "type": "slideshow",
-      "blocks": {
-        "slide-1": {
-          "type": "slide",
-          "settings": {
-            "link": "https:\/\/fluorescent.co\/help\/spark\/slideshow"
-          }
-        },
-        "slide-2": {
-          "type": "slide",
-          "settings": {
-            "link": "https:\/\/fluorescent.co\/help\/spark\/slideshow"
-          }
-        }
-      },
-      "block_order": [
-        "slide-1",
-        "slide-2"
-      ],
-      "settings": {}
-    },
-    "image-with-text-2": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {}
-        },
-        "subheading": {
-          "type": "subheading",
-          "settings": {}
-        },
-        "button": {
-          "type": "button",
-          "settings": {
-            "link": "https:\/\/fluorescent.co\/help\/spark\/image-with-text",
-            "link_text": "Learn more"
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "subheading",
-        "button"
-      ],
-      "settings": {}
-    },
-    "featured-collection": {
-      "type": "featured-collection",
-      "settings": {}
-    },
-    "slideshow-3": {
-      "type": "slideshow",
-      "blocks": {
-        "slide-1": {
-          "type": "slide",
-          "settings": {
-            "link": "https:\/\/fluorescent.co\/help\/spark\/slideshow"
-          }
-        },
-        "slide-2": {
-          "type": "slide",
-          "settings": {
-            "link": "https:\/\/fluorescent.co\/help\/spark\/slideshow"
-          }
-        }
-      },
-      "block_order": [
-        "slide-1",
-        "slide-2"
-      ],
-      "settings": {}
-    },
-    "featured-product": {
-      "type": "featured-product",
-      "blocks": {
-        "title": {
-          "type": "title",
-          "settings": {}
-        },
-        "price": {
-          "type": "price",
-          "settings": {}
-        },
-        "border": {
-          "type": "border",
-          "settings": {}
-        },
-        "variant_picker": {
-          "type": "variant_picker",
-          "settings": {}
-        },
-        "quantity_selector": {
-          "type": "quantity_selector",
-          "settings": {}
-        },
-        "buy_buttons": {
-          "type": "buy_buttons",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "title",
-        "price",
-        "border",
-        "variant_picker",
-        "quantity_selector",
-        "buy_buttons"
-      ],
-      "settings": {}
-    },
-    "testimonials": {
-      "type": "testimonials",
-      "blocks": {
-        "testimonial-1": {
-          "type": "testimonial",
-          "settings": {}
-        },
-        "testimonial-2": {
-          "type": "testimonial",
-          "settings": {}
-        },
-        "testimonial-3": {
-          "type": "testimonial",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "testimonial-1",
-        "testimonial-2",
-        "testimonial-3"
-      ],
-      "settings": {}
-    },
-    "slideshow-4": {
-      "type": "slideshow",
-      "blocks": {
-        "slide-1": {
-          "type": "slide",
-          "settings": {
-            "link": "https:\/\/fluorescent.co\/help\/spark\/slideshow"
-          }
-        },
-        "slide-2": {
-          "type": "slide",
-          "settings": {
-            "link": "https:\/\/fluorescent.co\/help\/spark\/slideshow"
-          }
-        }
-      },
-      "block_order": [
-        "slide-1",
-        "slide-2"
-      ],
-      "settings": {}
-    },
-    "image-with-text-3": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {}
-        },
-        "subheading": {
-          "type": "subheading",
-          "settings": {}
-        },
-        "button": {
-          "type": "button",
-          "settings": {
-            "link": "https:\/\/fluorescent.co\/help\/spark\/image-with-text",
-            "link_text": "Learn more"
+            "link_text": "shop now",
+            "link": "shopify:\/\/collections\/products"
           }
         }
       },
@@ -353,101 +33,307 @@
         "button"
       ],
       "settings": {
-        "text_alignment": "center"
+        "desktop_height": 100,
+        "mobile_height": 100,
+        "video_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0441\/9600\/4004\/files\/111421_MoolahKicks_Highres.mp4?v=1637005353",
+        "alignment": "left_bottom",
+        "overlay_shadow": 20,
+        "color_text": "#ffffff",
+        "color_background_button": "#ffffff",
+        "color_text_button": "#181818",
+        "color_overlay": "#000000",
+        "overlay_opacity": 0
       }
     },
-    "questions": {
-      "type": "questions",
+    "163258895321990609": {
+      "type": "rich-text",
       "blocks": {
-        "question-1": {
-          "type": "question",
-          "settings": {}
-        },
-        "question-2": {
-          "type": "question",
-          "settings": {}
-        },
-        "question-3": {
-          "type": "question",
-          "settings": {}
-        },
-        "question-4": {
-          "type": "question",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "question-1",
-        "question-2",
-        "question-3",
-        "question-4"
-      ],
-      "settings": {}
-    },
-    "slideshow-5": {
-      "type": "slideshow",
-      "blocks": {
-        "slide-1": {
-          "type": "slide",
+        "163258895321990609-0": {
+          "type": "heading",
           "settings": {
-            "link": "https:\/\/fluorescent.co\/help\/spark\/slideshow"
+            "title": "WE ARE MOOLAH KICKS",
+            "text_max_width": 32
           }
         },
-        "slide-2": {
-          "type": "slide",
+        "163258895321990609-1": {
+          "type": "text",
           "settings": {
-            "link": "https:\/\/fluorescent.co\/help\/spark\/slideshow"
+            "subheading": "<p>Built by and for female ballers, we are the first women’s basketball brand. We are fueling the hype, and elevating performance by making sneakers that fit our feet, and reflect our game. We're moving the needle towards equity, and we’ve started a new wave in WBB. One thats about both purpose and performance.<\/p>",
+            "text_max_width": 42
           }
         }
       },
       "block_order": [
-        "slide-1",
-        "slide-2"
+        "163258895321990609-0",
+        "163258895321990609-1"
       ],
-      "settings": {}
+      "settings": {
+        "section_contrast": false,
+        "background": "shopify:\/\/shop_images\/Background_cf848262-1b87-49da-ad3d-1203b6eb6ae4.png",
+        "use_background": false,
+        "background_color": "#f2693a",
+        "color": "#ffffff"
+      }
     },
-    "social-proof": {
-      "type": "social-proof",
+    "featured-collection": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "products",
+        "columns": 3,
+        "title": "HEAT CHECK",
+        "subheading": "",
+        "link_text": "SHOP ALL",
+        "text_horizontal": true,
+        "text_max_width": 31,
+        "aspect_ratio": "square",
+        "section_contrast": false,
+        "background": "#72cbcb",
+        "color": "#ffffff"
+      }
+    },
+    "1632592602a2c2b6ab": {
+      "type": "headline-bar",
       "blocks": {
-        "post-1": {
-          "type": "post",
-          "settings": {}
+        "e3bbc1a2-af67-4ade-8ccd-4981202c0a08": {
+          "type": "text",
+          "settings": {
+            "text": "MAKE MOVES"
+          }
         },
-        "post-2": {
-          "type": "post",
-          "settings": {}
+        "3b3bf423-57fa-491f-a346-7ed6df085cd8": {
+          "type": "text",
+          "settings": {
+            "text": "MAKE MOVES"
+          }
         },
-        "post-3": {
-          "type": "post",
-          "settings": {}
+        "bca783e1-2903-4b9b-bc19-fbcd5ce8bede": {
+          "type": "text",
+          "settings": {
+            "text": "MAKE MOVES"
+          }
+        },
+        "54c8667e-c422-46ac-9727-b9b29d09eb62": {
+          "type": "text",
+          "settings": {
+            "text": "MAKE MOVES"
+          }
+        },
+        "8be06f4f-6876-4321-92cb-728fdcd66352": {
+          "type": "text",
+          "settings": {
+            "text": "MAKE MOVES"
+          }
+        },
+        "10142a4b-e31e-4aa6-9ece-e1df1e004234": {
+          "type": "text",
+          "settings": {
+            "text": "MAKE MOVES"
+          }
+        },
+        "3cb75f5a-1683-49bf-9707-d14fc7814403": {
+          "type": "text",
+          "settings": {
+            "text": "MAKE MOVES"
+          }
+        },
+        "2b283597-ba01-454f-ad44-efb57f84057c": {
+          "type": "text",
+          "settings": {
+            "text": "MAKE MOVES"
+          }
         }
       },
       "block_order": [
-        "post-1",
-        "post-2",
-        "post-3"
+        "e3bbc1a2-af67-4ade-8ccd-4981202c0a08",
+        "3b3bf423-57fa-491f-a346-7ed6df085cd8",
+        "bca783e1-2903-4b9b-bc19-fbcd5ce8bede",
+        "54c8667e-c422-46ac-9727-b9b29d09eb62",
+        "8be06f4f-6876-4321-92cb-728fdcd66352",
+        "10142a4b-e31e-4aa6-9ece-e1df1e004234",
+        "3cb75f5a-1683-49bf-9707-d14fc7814403",
+        "2b283597-ba01-454f-ad44-efb57f84057c"
       ],
-      "settings": {}
+      "settings": {
+        "background": "#f9c94c",
+        "text": "#000000"
+      }
+    },
+    "image-with-text-1": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "<p>BUILT DIFFERENT...<\/p><p>but for real<\/p>",
+            "text_max_width": 38,
+            "color": ""
+          }
+        },
+        "subheading": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "<p>Women’s and men’s feet are shaped differently. When we play in men’s sneakers it puts us at greater risk for injury. Thats why Moolah Kicks are built specifically for female ballers.<br\/><br\/>Unlike Mens’, kids’ or unisex sneakers, our sneakers are fit to the female foot shape, and are made with the highest performance materials. Your game starts from the ground up, so lace up in sneakers that were crafted to elevate your game. Try them on for yourself, and feel the difference.<\/p><p><\/p>",
+            "text_max_width": 32,
+            "font_size": 18,
+            "font_size_mobile": 20,
+            "color": "",
+            "margin_top": 12
+          }
+        },
+        "753ee4bf-3a77-4af4-adb0-82b70e143a14": {
+          "type": "button",
+          "settings": {
+            "link": "shopify:\/\/collections\/products",
+            "link_text": "shop now"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "subheading",
+        "753ee4bf-3a77-4af4-adb0-82b70e143a14"
+      ],
+      "settings": {
+        "image_1": "shopify:\/\/shop_images\/HPMoolah.jpg",
+        "use_shadow": true,
+        "shadow_color": "#f9c94c",
+        "image_position": "right",
+        "image_width": "half",
+        "aspect_ratio": "natural",
+        "height_100": false,
+        "text_alignment": "center",
+        "shadow_text": false,
+        "background_text": "#f2693a",
+        "color_text": "#ffffff",
+        "color_shadow": "#000000",
+        "show_background_section": false,
+        "background_section": "",
+        "section_contrast": false,
+        "show_margin": true,
+        "remove_margin_bottom": false,
+        "remove_margin_top": false,
+        "full_text": false
+      }
+    },
+    "logo-list": {
+      "type": "logo-list",
+      "blocks": {
+        "logo-1": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Logo-2.jpg",
+            "link": ""
+          }
+        },
+        "logo-2": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Logo-3.jpg",
+            "link": ""
+          }
+        },
+        "logo-3": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Logo-1.jpg",
+            "link": ""
+          }
+        },
+        "logo-4": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Logo-5.jpg",
+            "link": ""
+          }
+        },
+        "logo-5": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Logo-4.jpg",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "logo-1",
+        "logo-2",
+        "logo-3",
+        "logo-4",
+        "logo-5"
+      ],
+      "settings": {
+        "columns": 5,
+        "gutter_spacing": 20,
+        "title": "as seen in",
+        "section_contrast": false,
+        "border_color": "#f2693a"
+      }
+    },
+    "image-with-text-2": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "<p>MEET THE FAM ❤️‍🔥<\/p>",
+            "text_max_width": 24,
+            "color": "#ffffff"
+          }
+        },
+        "26efb209-1fca-48f5-b206-7288fb123ec4": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "<p>THE BALLERS<br\/>BEHIND IT ALL<\/p>",
+            "text_max_width": 32,
+            "font_size": 49,
+            "font_size_mobile": 20,
+            "color": "",
+            "margin_top": 0
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "link": "shopify:\/\/pages\/our-story",
+            "link_text": "MOOLAH FAM"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "26efb209-1fca-48f5-b206-7288fb123ec4",
+        "button"
+      ],
+      "settings": {
+        "image_1": "shopify:\/\/shop_images\/HPMoolah2.jpg",
+        "use_shadow": false,
+        "shadow_color": "#f9c94c",
+        "image_position": "left",
+        "image_width": "half",
+        "aspect_ratio": "square",
+        "height_100": false,
+        "text_alignment": "left",
+        "shadow_text": true,
+        "background_text": "#f2693a",
+        "color_text": "#ffffff",
+        "color_shadow": "#000000",
+        "show_background_section": false,
+        "background_section": "",
+        "section_contrast": false,
+        "show_margin": false,
+        "remove_margin_bottom": true,
+        "remove_margin_top": true,
+        "full_text": true
+      }
     }
   },
   "order": [
-    "slideshow-1",
-    "text-columns-with-images",
+    "video-hero",
+    "163258895321990609",
+    "featured-collection",
+    "1632592602a2c2b6ab",
     "image-with-text-1",
     "logo-list",
-    "video-hero",
-    "image-with-features",
-    "quote",
-    "slideshow-2",
-    "image-with-text-2",
-    "featured-collection",
-    "slideshow-3",
-    "featured-product",
-    "testimonials",
-    "slideshow-4",
-    "image-with-text-3",
-    "questions",
-    "slideshow-5",
-    "social-proof"
+    "image-with-text-2"
   ]
 }

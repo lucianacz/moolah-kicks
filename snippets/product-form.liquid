@@ -60,6 +60,7 @@
       {%- if show_dynamic_checkout %} product-form__item--payment-button {%- endif -%}
       {%- if product.has_only_default_variant %} product-form__item--no-variants {%- endif -%}"
     >
+    {%- comment -%}
       <button type="submit" name="add"
         {% unless current_variant.available %} aria-disabled="true" disabled{% endunless %}
         aria-label="{% unless current_variant.available %}{{ 'products.product.sold_out' | t }}{% else %}{{ 'products.product.add_to_cart' | t }}{% endunless %}"
@@ -80,6 +81,13 @@
           <div class="btn__loading-bar"></div>
         </div>
       </button>
+      {%- endcomment -%}
+
+      {% if product.metafields.moolah.url != blank and settings.show_dsgspage %}        
+        <a href="{{ product.metafields.moolah.url }}" target="_blank" class="btn product-form__cart-submit">
+          BUY NOW
+        </a>
+      {% endif %}
 
       {%- if show_dynamic_checkout -%}
         {{ form | payment_button }}

@@ -11,60 +11,189 @@
           "type": "price",
           "settings": {}
         },
-        "border": {
-          "type": "border",
-          "settings": {}
-        },
         "variant_picker": {
           "type": "variant_picker",
-          "settings": {}
-        },
-        "quantity_selector": {
-          "type": "quantity_selector",
-          "settings": {}
+          "settings": {
+            "show_labels": true,
+            "variant_popup_option": "SIZE",
+            "variant_popup_text": "WHAT’S YOUR SIZE IN WOMENS?",
+            "variant_popup_page": "size-chart",
+            "product_type": "Sneaker"
+          }
         },
         "buy_buttons": {
           "type": "buy_buttons",
-          "settings": {}
+          "settings": {
+            "show_dynamic_checkout": false
+          }
         },
         "description": {
           "type": "description",
-          "settings": {}
-        },
-        "payment_widget": {
-          "type": "payment_widget",
-          "settings": {}
-        },
-        "security_widget": {
-          "type": "security_widget",
-          "settings": {}
-        },
-        "shipping_widget": {
-          "type": "shipping_widget",
-          "settings": {}
+          "settings": {
+            "style": "paragraph"
+          }
         }
       },
       "block_order": [
         "title",
         "price",
-        "border",
         "variant_picker",
-        "quantity_selector",
         "buy_buttons",
-        "description",
-        "payment_widget",
-        "security_widget",
-        "shipping_widget"
+        "description"
       ],
-      "settings": {}
+      "settings": {
+        "enable_quick_purchase_bar": false,
+        "show_share_buttons": false,
+        "enable_video_looping": true
+      }
+    },
+    "1632851509a4d0ccd9": {
+      "type": "image-with-features",
+      "blocks": {
+        "1632851509a4d0ccd9-0": {
+          "type": "heading",
+          "settings": {
+            "title": "THE GOODS",
+            "text_max_width": 32
+          }
+        },
+        "1632851509a4d0ccd9-1": {
+          "type": "feature",
+          "settings": {
+            "svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/0441\/9600\/4004\/files\/waves.svg",
+            "image": "shopify:\/\/shop_images\/waves.png",
+            "image_shape": "square",
+            "heading": "TRACTION",
+            "subheading": "<p>Our multidirectional tread provides maximum grip. The outsole features our logo in concentric circles, giving your foot maximal touch points to stop on a dime. The horizontal herringbone enables clean pivots and push offs.<\/p>",
+            "text_max_width": 32
+          }
+        },
+        "1632851509a4d0ccd9-2": {
+          "type": "feature",
+          "settings": {
+            "svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/0441\/9600\/4004\/files\/waves_1.svg?v=1632852277",
+            "image": "shopify:\/\/shop_images\/waves_1.png",
+            "image_shape": "square",
+            "heading": "BREATHABILITY",
+            "subheading": "<p>Perforated hex mesh in the tongue combined with the synthetic mesh upper delivers ultimate air flow.<\/p>",
+            "text_max_width": 32
+          }
+        },
+        "d554590c-86ee-4a5d-b9ab-f219a7dd5aae": {
+          "type": "feature",
+          "settings": {
+            "svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/0441\/9600\/4004\/files\/cloud-computing.svg?v=1632852277",
+            "image": "shopify:\/\/shop_images\/cloud-computing.png",
+            "image_shape": "square",
+            "heading": "COMFORT & FIT",
+            "subheading": "<p>The inner sneaker combines a female foot form with a basketball shape. Complete with a foam cushion interior, Moolah Kicks will fit you like no other.<\/p>",
+            "text_max_width": 32
+          }
+        },
+        "5e15ed80-67b9-4d20-99c0-c46ae0419b4b": {
+          "type": "feature",
+          "settings": {
+            "svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/0441\/9600\/4004\/files\/flash.svg?v=1632852277",
+            "image": "shopify:\/\/shop_images\/flash.png",
+            "image_shape": "square",
+            "heading": "SUPPORT",
+            "subheading": "<p>Foot support is reinforced by the female fit build. Solid lockdown through laces that widen towards the ankle. Features an EVA midsole for energy return.<\/p>",
+            "text_max_width": 32
+          }
+        },
+        "5f157477-30bc-45be-8723-17315f076f5d": {
+          "type": "feature",
+          "settings": {
+            "svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/0441\/9600\/4004\/files\/feather.svg?v=1632852277",
+            "image": "shopify:\/\/shop_images\/feather.png",
+            "image_shape": "square",
+            "heading": "WEIGHT",
+            "subheading": "<p>Our sneakers are lighter than the average Men’s or Children’s alternative. The lightweight materials will let you reach your highest vertical.<\/p>",
+            "text_max_width": 32
+          }
+        }
+      },
+      "block_order": [
+        "1632851509a4d0ccd9-0",
+        "1632851509a4d0ccd9-1",
+        "1632851509a4d0ccd9-2",
+        "d554590c-86ee-4a5d-b9ab-f219a7dd5aae",
+        "5e15ed80-67b9-4d20-99c0-c46ae0419b4b",
+        "5f157477-30bc-45be-8723-17315f076f5d"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/MoolahPP.jpg",
+        "image_width": "half",
+        "aspect_ratio": "portrait",
+        "text_position": "left",
+        "text_alignment": "left",
+        "section_contrast": false,
+        "product_type": "SNEAKER"
+      }
     },
     "recommendations": {
       "type": "product-recommendations",
-      "settings": {}
+      "settings": {
+        "columns": 3,
+        "title": "Forget we got next, WE UP NOW",
+        "subheading": "<p>Keep bringing the heat! Check out our additional merch, and other colorways below.<\/p>",
+        "text_max_width": 42,
+        "aspect_ratio": "square",
+        "section_contrast": false
+      }
+    },
+    "163285120146bb4f7b": {
+      "type": "rich-text",
+      "blocks": {
+        "163285120146bb4f7b-0": {
+          "type": "heading",
+          "settings": {
+            "title": "OUR CULTURE",
+            "text_max_width": 42
+          }
+        },
+        "163285120146bb4f7b-1": {
+          "type": "text",
+          "settings": {
+            "subheading": "<p>Women’s hoops- heard you! We are the FIRST brand entirely dedicated to celebrating women’s basketball. Every dollar we earn goes directly into reinvesting in WBB by rewarding female hoopers at every level through sponsorships, and by increasing our gear options to reflect what you want and need. Every model, colorway, and decision, is made by consulting over 100 WBB players. With us, you are a part of growing a culture unique to women’s hoops. <\/p>",
+            "text_max_width": 48
+          }
+        }
+      },
+      "block_order": [
+        "163285120146bb4f7b-0",
+        "163285120146bb4f7b-1"
+      ],
+      "settings": {
+        "section_contrast": false,
+        "use_background": true,
+        "background_color": "#f2693a",
+        "color": "#ffffff"
+      }
+    },
+    "1637079660774c613c": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "collection": "",
+        "columns": 3,
+        "title": "Featured collection",
+        "subheading": "",
+        "link_text": "",
+        "text_horizontal": true,
+        "text_max_width": 36,
+        "aspect_ratio": "natural",
+        "section_contrast": false,
+        "background": "#fff",
+        "color": ""
+      }
     }
   },
   "order": [
     "main",
-    "recommendations"
+    "1632851509a4d0ccd9",
+    "recommendations",
+    "163285120146bb4f7b",
+    "1637079660774c613c"
   ]
 }

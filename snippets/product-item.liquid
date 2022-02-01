@@ -57,7 +57,7 @@
         {%- endif -%}
       </a>
 
-      {%- unless product.available -%}
+      {%- unless product.available or settings.show_dsgspage -%}
         <div class="product-item__wash"></div>
       {%- endunless -%}
 
@@ -135,13 +135,12 @@
           </div>
         {% endif %}
 
-        {% unless product.available or placeholder %}
-          <div class="product-item__badge product-item__badge--sold-out fs-body-bold">
-            {{ 'products.product.sold_out' | t }}
-          </div>
+        {% unless product.available or placeholder or settings.show_dsgspage %}  
+        <div class="product-item__badge product-item__badge--sold-out fs-body-bold">
+          {{ 'products.product.sold_out' | t }}
+        </div>
         {% endunless %}
       </div>
     {%- endif -%}
-
   </div>
 </div>
