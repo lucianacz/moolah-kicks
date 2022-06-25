@@ -1,5 +1,22 @@
 {
   "sections": {
+    "1652999247938e4895": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "paint-shop-edition",
+        "columns": 4,
+        "title": "JUST DROPPED: PAINT SHOP PACK",
+        "title_smaller": false,
+        "subheading": "",
+        "link_text": "",
+        "text_horizontal": false,
+        "text_max_width": 44,
+        "aspect_ratio": "natural",
+        "section_contrast": false,
+        "background": "#72cbcb",
+        "color": "#181818"
+      }
+    },
     "banner": {
       "type": "main-collection-banner",
       "settings": {
@@ -84,12 +101,13 @@
         "dd413ce1-18d9-4839-b95d-26d527bbf6be"
       ],
       "settings": {
-        "background": "#f2693a",
+        "background": "#71cbcb",
         "text": "#000000"
       }
     }
   },
   "order": [
+    "1652999247938e4895",
     "banner",
     "product-grid",
     "1632593877860b0e99"

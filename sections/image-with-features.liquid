@@ -6,14 +6,17 @@
   endif
 -%}
 
-{% if section.settings.product_type != blank %}
-{% assign product_type_section = section.settings.product_type | downcase %}
-{% assign product_type = product.type | downcase %}
-{% endif %}
 
-  
+{% assign count = 0 %}
+{%- for block in section.blocks -%}
+    {%- if block.type == 'feature' -%}
+      {% if block.settings.svg != blank or block.settings.image != blank or block.settings.heading != blank or block.settings.subheading != blank %}
+      {% assign count = count | plus: 1 %}
+      {% endif %}
+    {% endif %}
+{% endfor %}
 
-{% unless section.settings.product_type != blank %}
+{% if count > 1 %}
 <div
   data-section-id="{{ section.id }}"
   data-section-type="image-with-features"
@@ -48,6 +51,7 @@
       {%- endif -%}
     </div>
 
+
     <div class="image-with-features__text-container">
       {%- for block in section.blocks -%}
         {%- if block.type == 'heading' -%}
@@ -71,59 +75,7 @@
     </div>
   </div>
 </div>
-{% elsif template == 'product' and product_type_section == product_type %}
-<div data-section-id="{{ section.id }}" data-section-type="image-with-features" class="
-  image-with-features
-  image-with-features--text-{{ section.settings.text_position }}
-  image-with-features--align-{{ section.settings.text_alignment }}
-  image-with-features--{{ section.settings.aspect_ratio }}
-  image-with-features--image-{{ section.settings.image_width }}
-  section
-  {% if section.settings.section_contrast -%}
-    section--contrast
-  {%- endif %}
-">
-  <div class="image-with-features__inner section__inner">
-    <div class="image-with-features__image-container">
-      {%- if section.settings.image -%}
-      <div class="image-with-features__image-wrapper">
-        {% render 'image' with
-          image: section.settings.image,
-          wrapper_class: 'image-with-features__image',
-          disable_style: image_is_constrained,
-        %}
-      </div>
-      {%- else -%}
-      <div class="image-with-features__image-wrapper">
-        <div class="image-with-features__image placeholder-image">
-          {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
-        </div>
-      </div>
-      {%- endif -%}
-    </div>
-
-    <div class="image-with-features__text-container">
-      {%- for block in section.blocks -%}
-      {%- if block.type == 'heading' -%}
-      <h2 class="image-with-features__heading ff-heading fs-heading-2-base fs-heading-1-base-ns"
-        style="--text-max-width: {{ block.settings.text_max_width }}rem">
-        {{ block.settings.title | newline_to_br }}
-      </h2>
-      {%- else -%}
-      {% render 'image-with-features-item' with
-          image: block.settings.image,
-          svg: block.settings.svg,
-          image_shape: block.settings.image_shape,
-          text_max_width: block.settings.text_max_width,
-          heading: block.settings.heading,
-          subheading: block.settings.subheading,
-        %}
-      {%- endif -%}
-      {%- endfor -%}
-    </div>
-  </div>
-</div>
-{% endunless %}
+{% endif %}
 
 
 {% schema %}
@@ -200,12 +152,6 @@
         "type": "checkbox",
         "label": "t:sections.image_with_features.settings.section_contrast.label",
         "default": false
-      },
-      {
-        "type": "text",
-        "id": "product_type",
-        "label": "Product type",
-        "info": "If this section is using on the product page and this fill is completed, this would be shown only in that product type"
       }
     ],
     "max_blocks": 6,
@@ -237,7 +183,7 @@
         "name": "t:sections.image_with_features.blocks.feature.name",
         "settings": [
           {
-            "type": "text",
+            "type": "url",
             "id": "svg",
             "label": "Image SVG",
             "info": "Upload from Settings - Files"

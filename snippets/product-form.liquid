@@ -60,34 +60,34 @@
       {%- if show_dynamic_checkout %} product-form__item--payment-button {%- endif -%}
       {%- if product.has_only_default_variant %} product-form__item--no-variants {%- endif -%}"
     >
-    {%- comment -%}
-      <button type="submit" name="add"
-        {% unless current_variant.available %} aria-disabled="true" disabled{% endunless %}
-        aria-label="{% unless current_variant.available %}{{ 'products.product.sold_out' | t }}{% else %}{{ 'products.product.add_to_cart' | t }}{% endunless %}"
-        class="product-form__cart-submit btn btn--small btn--medium-ns btn--full {% if show_dynamic_checkout %}btn--secondary{% else %}btn--primary{% endif %}"
-        data-add-to-cart
-        data-lang-available="{{ 'product.add_to_cart' | t }}"
-        data-lang-unavailable="{{ 'product.unavailable' | t }}"
-        data-lang-sold-out="{{ 'product.sold_out' | t }}"
-        >
-        <span data-add-to-cart-text>
-          {%- unless current_variant.available -%}
-            {{ 'products.product.sold_out' | t }}
-          {%- else -%}
-            {{ 'products.product.add_to_cart' | t }}
-          {%- endunless -%}
-        </span>
-        <div class="btn__loading-wrap">
-          <div class="btn__loading-bar"></div>
-        </div>
-      </button>
-      {%- endcomment -%}
+    {% if product.metafields.moolah.url != blank and settings.show_dsgspage %}
+    <a href="{{ product.metafields.moolah.url }}" target="_blank" class="btn product-form__cart-submit">
+      BUY NOW
+    </a>
 
-      {% if product.metafields.moolah.url != blank and settings.show_dsgspage %}        
-        <a href="{{ product.metafields.moolah.url }}" target="_blank" class="btn product-form__cart-submit">
-          BUY NOW
-        </a>
-      {% endif %}
+    <a href="javascript:closeby-open" class="btn btn-location">
+      TRY ON AT DICK’S
+    </a>
+
+    {% else %}
+
+    <button type="submit" name="add" {% unless current_variant.available %} aria-disabled="true" disabled{% endunless %}
+      aria-label="{% unless current_variant.available %}{{ 'products.product.sold_out' | t }}{% else %}{{ 'products.product.add_to_cart' | t }}{% endunless %}"
+      class="product-form__cart-submit btn btn--small btn--medium-ns btn--full {% if show_dynamic_checkout %}btn--secondary{% else %}btn--primary{% endif %}"
+      data-add-to-cart data-lang-available="{{ 'product.add_to_cart' | t }}"
+      data-lang-unavailable="{{ 'product.unavailable' | t }}" data-lang-sold-out="{{ 'product.sold_out' | t }}">
+      <span data-add-to-cart-text>
+        {%- unless current_variant.available -%}
+        {{ 'products.product.sold_out' | t }}
+        {%- else -%}
+        {{ 'products.product.add_to_cart' | t }}
+        {%- endunless -%}
+      </span>
+      <div class="btn__loading-wrap">
+        <div class="btn__loading-bar"></div>
+      </div>
+    </button>
+    {% endif %}
 
       {%- if show_dynamic_checkout -%}
         {{ form | payment_button }}
@@ -97,9 +97,6 @@
         {{- form | payment_terms -}}
       </div>
 
-      <a href="javascript:closeby-open" class="btn btn-location">
-        TRY ON AT DICK’S
-      </a>
 
       {% comment %} Surface pick-up {% endcomment %}
       <div class="store-availability-container__wrapper" data-store-availability-container data-base-url="{{ shop.url }}{{ routes.root_url }}"></div>

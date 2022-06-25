@@ -206,7 +206,7 @@
 /* COLLECTION PAGE */
 
 .collection-main{
-  background: #72CBCB;
+  background: #F9C94C;
 }
 .collection__top-row{
    border: none;
@@ -258,6 +258,21 @@
   }
 }
 
+.template-collection .product-item__media {
+  border: 2px solid black;
+  box-shadow: 15px 15px #000;
+}
+
+
+.template-collection .featured-collection__slide {
+  width: calc(100% - 20px);
+}
+
+@media (min-width: 60em){
+  .template-collection .featured-collection--columns-4 .featured-collection__slide {
+      width: calc(25% - 4px);
+  }
+}
 
 /* IMAGE WITH TEXT */
 

@@ -8,7 +8,7 @@
     "color_header_bg": "#ffffff",
     "color_header_text": "#000000",
     "color_background_footer": "#72cbcb",
-    "color_background_footer_collection": "#f9c94c",
+    "color_background_footer_collection": "#f26939",
     "color_text_footer": "#000000",
     "color_background_button": "#FFFFFF",
     "color_text_button": "#000000",
@@ -50,6 +50,7 @@
     "checkout_logo_position": "center",
     "checkout_accent_color": "#72cbcb",
     "checkout_button_color": "#72cbcb",
+    "buy_now_dicks": "https:\/\/www.dickssportinggoods.com\/p\/moolah-kicks-womens-moolah-phantom-1-basketball-shoes-21jafwmm1whtxxxxxftw\/21jafwmm1whtxxxxxftw?enteredSearchTerm=moolah%20kicks",
     "variant_popup_page": "size-guide",
     "color_border_header": "#363636",
     "sections": {

@@ -41,7 +41,7 @@
         "16327066192148ebcb-0": {
           "type": "heading",
           "settings": {
-            "title": "<p>EQUALITY IS IN OUR BAG 🎒<br\/>AND ON OUR BOX 🤝<\/p>",
+            "title": "<p>OUR PURPOSE IS IN OUR BAG 🎒<br\/>AND ON OUR BOX 🤝<\/p>",
             "text_max_width": 35,
             "color": "#ffffff"
           }
@@ -49,7 +49,7 @@
         "16327066192148ebcb-1": {
           "type": "subheading",
           "settings": {
-            "subheading": "<p>Everything we do is grounded in our mission to fuel WBB, and advance gender equality- even our box. On the outside, the blue and yellow represent the average attendance ratio at NCAA men’s (blue) versus women’s (yellow) games during the 2019 season. <br\/><br\/>The inside of the box is a packed crowd surrounding a court. It is a glimpse of the future of WBB that we are building together. We are reinvesting in WBB and its players. Over time, we will see the outer yellow take over the box. <br\/><br\/>Our purpose drives our product. Moolah isn’t just fighting for equality- we are a vehicle for equity. <\/p>",
+            "subheading": "<p>Everything we do is grounded in our mission to elevate performance, and advance opportunties within WBB. The outer box design acknowledges inequalities of the past, while the inner box showcases the evolution.<\/p><p>On the outside, the blue and yellow represent the average attendance ratio at NCAA men’s (blue) versus women’s (yellow) games during the 2019 season. <br\/><br\/>The inside of the box is a packed crowd surrounding a court. It is a glimpse of the future of WBB that we are building together. We are reinvesting in WBB and its players. Over time, we will see the outer yellow take over the box. <br\/><br\/>Our purpose drives our product. Moolah isn’t just fighting for equality- we are a vehicle for equity. <\/p>",
             "text_max_width": 32,
             "font_size": 20,
             "font_size_mobile": 20,
@@ -227,10 +227,10 @@
         "da662207-77e4-41a4-be09-d1756df87772": {
           "type": "numbers",
           "settings": {
-            "number_1": "Slim Width",
+            "number_1": "Narrow Heel",
             "number_2": "Lifted Arch",
-            "number_3": "Shallow Lateral Side",
-            "number_4": "Narrow Heel",
+            "number_3": "Slimmer Width",
+            "number_4": "Shallow Lateral Side",
             "background": "#f2693a",
             "color": "#ffffff"
           }
@@ -275,22 +275,13 @@
             "role": "Founder & CEO"
           }
         },
-        "861a1091-6130-43f9-8ac4-a421afdcd9bb": {
-          "type": "team_member",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/sean1_copy.jpg",
-            "image_hover": "shopify:\/\/shop_images\/About-1.jpg",
-            "name": "Sean Gayle",
-            "role": "Design Lead"
-          }
-        },
         "6b1142e8-acfe-4912-bee4-7778f53cf4d0": {
           "type": "team_member",
           "settings": {
             "image": "shopify:\/\/shop_images\/faith1_copy.jpg",
             "image_hover": "shopify:\/\/shop_images\/About-4.jpg",
             "name": "Faith Suggs",
-            "role": "Social Media"
+            "role": "Athlete Coordinator"
           }
         },
         "3542d5cb-bb82-45f8-afd4-f8ed3e5b9e88": {
@@ -302,22 +293,43 @@
             "role": "Social Media"
           }
         },
+        "861a1091-6130-43f9-8ac4-a421afdcd9bb": {
+          "type": "team_member",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/sean1_copy.jpg",
+            "image_hover": "shopify:\/\/shop_images\/About-1.jpg",
+            "name": "Sean Gayle",
+            "role": "Contributing Designer"
+          }
+        },
         "bdff92f5-8afb-4971-aede-8b0f1d1f9622": {
           "type": "team_member",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/emmaheadshot-1.jpg",
             "image_hover": "shopify:\/\/shop_images\/About-2.jpg",
             "name": "Emma Bedeker",
             "role": "Social Media"
           }
+        },
+        "ca91b43c-fbdd-407f-87d4-d180144a1660": {
+          "type": "team_member",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/unnamed.jpg",
+            "image_hover": "shopify:\/\/shop_images\/unnamed2.jpg",
+            "name": "Kerstin Kelly",
+            "role": "Graphic Design"
+          }
         }
       },
       "block_order": [
         "8d3d26cb-a5b5-4fc1-8004-d33ac716a8b7",
-        "861a1091-6130-43f9-8ac4-a421afdcd9bb",
         "6b1142e8-acfe-4912-bee4-7778f53cf4d0",
         "3542d5cb-bb82-45f8-afd4-f8ed3e5b9e88",
-        "bdff92f5-8afb-4971-aede-8b0f1d1f9622"
+        "861a1091-6130-43f9-8ac4-a421afdcd9bb",
+        "bdff92f5-8afb-4971-aede-8b0f1d1f9622",
+        "ca91b43c-fbdd-407f-87d4-d180144a1660"
       ],
       "settings": {
         "title": "MEET THE TEAM",

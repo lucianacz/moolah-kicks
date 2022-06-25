@@ -6,17 +6,17 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "title": "<p>THE WAIT IS OVER<\/p>",
-            "heading_text_size": 68,
+            "title": "<p>GET RIGHT THIS SUMMER<\/p>",
+            "heading_text_size": 62,
             "text_max_width": 60
           }
         },
         "subheading": {
           "type": "subheading",
           "settings": {
-            "subheading": "<p>COP THE PHANTOM 1’S<\/p>",
-            "text_max_width": 40,
-            "font_size": 41
+            "subheading": "<p>Shop the Limited Edition Paint Shop Pack<\/p>",
+            "text_max_width": 44,
+            "font_size": 26
           }
         },
         "button": {
@@ -35,7 +35,7 @@
       "settings": {
         "desktop_height": 100,
         "mobile_height": 100,
-        "video_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0441\/9600\/4004\/files\/111421_MoolahKicks_Highres.mp4?v=1637005353",
+        "video_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0441\/9600\/4004\/files\/051922_MoolahKicks_16MB_fa2de1dc-d40b-4c1c-8a8c-0ac8c90ec424.mp4?v=1653054540",
         "alignment": "left_bottom",
         "overlay_shadow": 20,
         "color_text": "#ffffff",
@@ -58,7 +58,7 @@
         "163258895321990609-1": {
           "type": "text",
           "settings": {
-            "subheading": "<p>Built by and for female ballers, we are the first women’s basketball brand. We are fueling the hype, and elevating performance by making sneakers that fit our feet, and reflect our game. We're moving the needle towards equity, and we’ve started a new wave in WBB. One thats about both purpose and performance.<\/p>",
+            "subheading": "<p>Built by and for female ballers, we are the first women’s basketball brand. We are fueling the hype, and elevating performance by making sneakers that fit our feet, and reflect our game. We’ve started a new wave in WBB. One thats about both purpose and performance.<\/p>",
             "text_max_width": 42
           }
         }
@@ -78,9 +78,10 @@
     "featured-collection": {
       "type": "featured-collection",
       "settings": {
-        "collection": "products",
+        "collection": "paint-shop-edition",
         "columns": 3,
         "title": "HEAT CHECK",
+        "title_smaller": true,
         "subheading": "",
         "link_text": "SHOP ALL",
         "text_horizontal": true,
@@ -184,7 +185,8 @@
           "type": "button",
           "settings": {
             "link": "shopify:\/\/collections\/products",
-            "link_text": "shop now"
+            "link_text": "shop now",
+            "new_tab": false
           }
         }
       },
@@ -295,7 +297,8 @@
           "type": "button",
           "settings": {
             "link": "shopify:\/\/pages\/our-story",
-            "link_text": "MOOLAH FAM"
+            "link_text": "MOOLAH FAM",
+            "new_tab": false
           }
         }
       },

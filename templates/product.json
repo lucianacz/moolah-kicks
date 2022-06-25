@@ -60,55 +60,50 @@
         "1632851509a4d0ccd9-1": {
           "type": "feature",
           "settings": {
-            "svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/0441\/9600\/4004\/files\/waves.svg",
-            "image": "shopify:\/\/shop_images\/waves.png",
+            "svg": "{{ product.metafields.moolah.product_svg_1.value }}",
             "image_shape": "square",
-            "heading": "TRACTION",
-            "subheading": "<p>Our multidirectional tread provides maximum grip. The outsole features our logo in concentric circles, giving your foot maximal touch points to stop on a dime. The horizontal herringbone enables clean pivots and push offs.<\/p>",
+            "heading": "{{ product.metafields.moolah.product_specs_title_1.value }}",
+            "subheading": "<p>{{ product.metafields.moolah.product_specs_content_1 | metafield_tag }}<\/p>",
             "text_max_width": 32
           }
         },
         "1632851509a4d0ccd9-2": {
           "type": "feature",
           "settings": {
-            "svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/0441\/9600\/4004\/files\/waves_1.svg?v=1632852277",
-            "image": "shopify:\/\/shop_images\/waves_1.png",
+            "svg": "{{ product.metafields.moolah.product_svg_2.value }}",
             "image_shape": "square",
-            "heading": "BREATHABILITY",
-            "subheading": "<p>Perforated hex mesh in the tongue combined with the synthetic mesh upper delivers ultimate air flow.<\/p>",
+            "heading": "{{ product.metafields.moolah.product_specs_title_2.value }}",
+            "subheading": "<p>{{ product.metafields.moolah.product_specs_content_2 | metafield_tag }}<\/p>",
             "text_max_width": 32
           }
         },
         "d554590c-86ee-4a5d-b9ab-f219a7dd5aae": {
           "type": "feature",
           "settings": {
-            "svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/0441\/9600\/4004\/files\/cloud-computing.svg?v=1632852277",
-            "image": "shopify:\/\/shop_images\/cloud-computing.png",
+            "svg": "{{ product.metafields.moolah.product_svg_3.value }}",
             "image_shape": "square",
-            "heading": "COMFORT & FIT",
-            "subheading": "<p>The inner sneaker combines a female foot form with a basketball shape. Complete with a foam cushion interior, Moolah Kicks will fit you like no other.<\/p>",
+            "heading": "{{ product.metafields.moolah.product_specs_title_3.value }}",
+            "subheading": "<p>{{ product.metafields.moolah.product_specs_content_3 | metafield_tag }}<\/p>",
             "text_max_width": 32
           }
         },
         "5e15ed80-67b9-4d20-99c0-c46ae0419b4b": {
           "type": "feature",
           "settings": {
-            "svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/0441\/9600\/4004\/files\/flash.svg?v=1632852277",
-            "image": "shopify:\/\/shop_images\/flash.png",
+            "svg": "{{ product.metafields.moolah.product_svg_4.value }}",
             "image_shape": "square",
-            "heading": "SUPPORT",
-            "subheading": "<p>Foot support is reinforced by the female fit build. Solid lockdown through laces that widen towards the ankle. Features an EVA midsole for energy return.<\/p>",
+            "heading": "{{ product.metafields.moolah.product_specs_title_4.value }}",
+            "subheading": "<p>{{ product.metafields.moolah.product_specs_content_4 | metafield_tag }}<\/p>",
             "text_max_width": 32
           }
         },
         "5f157477-30bc-45be-8723-17315f076f5d": {
           "type": "feature",
           "settings": {
-            "svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/0441\/9600\/4004\/files\/feather.svg?v=1632852277",
-            "image": "shopify:\/\/shop_images\/feather.png",
+            "svg": "{{ product.metafields.moolah.product_svg_5.value }}",
             "image_shape": "square",
-            "heading": "WEIGHT",
-            "subheading": "<p>Our sneakers are lighter than the average Men’s or Children’s alternative. The lightweight materials will let you reach your highest vertical.<\/p>",
+            "heading": "{{ product.metafields.moolah.product_specs_title_5.value }}",
+            "subheading": "<p>{{ product.metafields.moolah.product_specs_content_5 | metafield_tag }}<\/p>",
             "text_max_width": 32
           }
         }
@@ -127,12 +122,12 @@
         "aspect_ratio": "portrait",
         "text_position": "left",
         "text_alignment": "left",
-        "section_contrast": false,
-        "product_type": "SNEAKER"
+        "section_contrast": false
       }
     },
     "recommendations": {
       "type": "product-recommendations",
+      "disabled": true,
       "settings": {
         "columns": 3,
         "title": "Forget we got next, WE UP NOW",
@@ -184,7 +179,7 @@
         "text_max_width": 36,
         "aspect_ratio": "natural",
         "section_contrast": false,
-        "background": "#fff",
+        "background": "#ffffff",
         "color": ""
       }
     }

@@ -49,7 +49,7 @@
       link_text: section.settings.link_text,
       horizontal: section.settings.text_horizontal,
       color: section.settings.color,
-      title_smaller: true,
+      title_smaller: section.settings.title_smaller,
       classes: 'section-header--large section-header--center',
     %}
 
@@ -100,6 +100,12 @@
         "type": "text",
         "label": "t:sections.featured_collection.settings.title.label",
         "default": "Featured collection"
+      },
+      {
+        "type": "checkbox",
+        "id": "title_smaller",
+        "label": "Title smaller",
+        "default": true
       },
       {
         "id": "subheading",

@@ -8,6 +8,8 @@
   endif
 -%}
 
+{% if svg != blank or image != blank or heading != blank or subheading != blank%}
+
 <div
   class="
     image-with-features__item
@@ -40,3 +42,4 @@
     </div>
   {%- endif -%}
 </div>
+{% endif %}
